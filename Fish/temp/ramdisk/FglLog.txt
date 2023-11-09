@@ -1,26 +1,27 @@
-*GUI(1)*UserPrjDat:C:\project\Fish\Fish\Bin\fshmi.bin
-*GUI(1)*PicResDir:C:\project\Fish\Fish\Bin\Images\
-*GUI(1)*TtfResDir:C:\project\Fish\Fish\Bin\Fonts\
-*GUI(1)*AudResDir:C:\project\Fish\Fish\Bin\Audio\
-*GUI(1)*PlcDrvDir:C:\project\Fish\Fish\Bin\Device\
-*GUI(1)*MacroDir:C:\project\Fish\Fish\Bin\Macro\
-*GUI(1)*RcpDir:C:\project\Fish\Fish\temp\disk\hmi\rcp\
+*GUI(1)*UserPrjDat:D:\project\Fish\Fish\Bin\fshmi.bin
+*GUI(1)*PicResDir:D:\project\Fish\Fish\Bin\Images\
+*GUI(1)*TtfResDir:D:\project\Fish\Fish\Bin\Fonts\
+*GUI(1)*AudResDir:D:\project\Fish\Fish\Bin\Audio\
+*GUI(1)*PlcDrvDir:D:\project\Fish\Fish\Bin\Device\
+*GUI(1)*MacroDir:D:\project\Fish\Fish\Bin\Macro\
+*GUI(1)*RcpDir:D:\project\Fish\Fish\temp\disk\hmi\rcp\
 *GUI(1)*SysFrmBuf:<XPixs>1920</XPixs><YPixs>1080</YPixs><ColorBits>16</ColorBits>
-*GUI(1)*HmiDir:C:\project\Fish\Fish\temp\disk\hmi\
-*GUI(1)*SdDir:C:\project\Fish\Fish\temp\disk\sd\
-*GUI(1)*Usb1Dir:C:\project\Fish\Fish\temp\disk\usb1\
+*GUI(1)*HmiDir:D:\project\Fish\Fish\temp\disk\hmi\
+*GUI(1)*SdDir:D:\project\Fish\Fish\temp\disk\sd\
+*GUI(1)*Usb1Dir:D:\project\Fish\Fish\temp\disk\usb1\
 *GUI(1)*Usb2Dir:C:\Program Files (x86)\EKF\PRO-Screen master 2.x\Bin\
-*GUI(1)*MemFs:C:\project\Fish\Fish\temp\ramdisk\
+*GUI(1)*MemFs:D:\project\Fish\Fish\temp\ramdisk\
 *GUI(1)*RunMode:SimPlc
 *GUI(1)*Debug:N
 *GUI(1)*SysFontDir:C:\Program Files (x86)\EKF\PRO-Screen master 2.x\Lib\Fonts\
 *GUI(1)*MapPort:1234
 *GUI(1)*SimRamSize:512
 *GUI(1)*SimExitTime:14400
+*GUI(1)*ProjectCheckSum(0x5d3cbb3, 0x5d3c16c)
 *GUI(1)*ClientMonit::Pid(0)
 *GUI(1)*LightSave 0 BackLight 0 LightPercent 0
 *GUI(1)*DoLoadTtfFile::Pid(0)
 *GUI(1)*loadTtfFile(C:\Program Files (x86)\EKF\PRO-Screen master 2.x\Lib\Fonts\puhui-regular.ttf) OK
-*GUI(1)*loadTtfFile(C:\project\Fish\Fish\Bin\Fonts\ARIAL.TTF) OK
+*GUI(1)*loadTtfFile(D:\project\Fish\Fish\Bin\Fonts\ARIAL.TTF) OK
 *GUI(1)*Touch::Pid(0),interval=0
-*GUI(7901)*MacMonitor(0)::Pid(0)
+*GUI(2401)*MacMonitor(0)::Pid(0)
