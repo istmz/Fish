@@ -23,5 +23,11 @@
 *GUI(1)*loadTtfFile(C:\Program Files (x86)\EKF\PRO-Screen master 2.x\Lib\Fonts\puhui-regular.ttf) OK
 *GUI(1)*loadTtfFile(D:\project\Fish\Fish\Bin\Fonts\ARIAL.TTF) OK
 *GUI(1)*Touch::Pid(0),interval=0
-*GUI(11801)*MacMonitor(1)::Pid(0)
-*GUI(24301)*MacMonitor(0)::Pid(0)
+*GUI(21101)*MacMonitor(1)::Pid(0)
+*GUI(23701)*MacMonitor(0)::Pid(0)
+*GUI(27401)*MacMonitor(3)::Pid(0)
+*GUI(29501)*MacMonitor(2)::Pid(0)
+*GUI(31901)*MacMonitor(7)::Pid(0)
+*GUI(34401)*MacMonitor(8)::Pid(0)
+*GUI(48101)*MacMonitor(4)::Pid(0)
+*GUI(57301)*MacMonitor(6)::Pid(0)
