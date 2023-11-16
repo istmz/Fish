@@ -17,17 +17,11 @@
 *GUI(1)*MapPort:1234
 *GUI(1)*SimRamSize:512
 *GUI(1)*SimExitTime:14400
-*GUI(1)*ProjectCheckSum(0x5dd9ebb, 0x5dd1441)
 *GUI(1)*LightSave 0 BackLight 0 LightPercent 0
 *GUI(1)*ClientMonit::Pid(0)
 *GUI(1)*DoLoadTtfFile::Pid(0)
 *GUI(1)*loadTtfFile(C:\Program Files (x86)\EKF\PRO-Screen master 2.x\Lib\Fonts\puhui-regular.ttf) OK
 *GUI(1)*loadTtfFile(D:\project\Fish\Fish\Bin\Fonts\ARIAL.TTF) OK
 *GUI(1)*Touch::Pid(0),interval=0
-*GUI(5901)*MacMonitor(27)::Pid(0)
-*GUI(7401)*MacMonitor(28)::Pid(0)
-*GUI(8801)*MacMonitor(3)::Pid(0)
-*GUI(11601)*MacMonitor(4)::Pid(0)
-*GUI(20801)*MacMonitor(0)::Pid(0)
-*GUI(26501)*MacMonitor(8)::Pid(0)
-*GUI(53401)*MacMonitor(5)::Pid(0)
+*GUI(3901)*MacMonitor(15)::Pid(0)
+*GUI(6401)*MacMonitor(20)::Pid(0)
