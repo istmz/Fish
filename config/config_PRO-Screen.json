@@ -1,0 +1,1920 @@
+{
+    "device_type": "pro-screen",
+    "title": "PRO-Screen",
+    "group": "g-control-panel",
+    "device": {
+        "name": "PRO-Screen",
+        "id": "pro_screen",
+        "response_timeout_ms": 100,
+        "guard_interval_us": 5000,
+        "frame_timeout_ms": 0,
+        "groups": [
+            {
+                "title": "Young fish",
+                "id": "young_fish",
+                "order": 1
+            },
+            {
+                "title": "Summator",
+                "id": "young_summator",
+                "group": "young_fish",
+                "order": 1
+            },
+            {
+                "title": "System",
+                "id": "young_system",
+                "group": "young_fish",
+                "order": 2
+            },
+            {
+                "title": "Inverter",
+                "id": "young_inverter",
+                "group": "young_fish",
+                "order": 3
+            },
+            {
+                "title": "Drum filter",
+                "id": "young_drum_filter",
+                "group": "young_fish",
+                "order": 4
+            },
+            {
+                "title": "Konus",
+                "id": "young_konus",
+                "group": "young_fish",
+                "order": 5
+            },
+            {
+                "title": "Oxygen sensor",
+                "id": "young_oxygen_sensor",
+                "group": "young_fish",
+                "order": 6
+            },
+            {
+                "title": "sensor 1",
+                "id": "young_oxygen_sensor_1",
+                "group": "young_oxygen_sensor",
+                "order": 1
+            },
+            {
+                "title": "sensor 2",
+                "id": "young_oxygen_sensor_2",
+                "group": "young_oxygen_sensor",
+                "order": 2
+            },
+            {
+                "title": "pH sensor",
+                "id": "young_pH_sensor",
+                "group": "young_fish",
+                "order": 7
+            },
+            {
+                "title": "sensor 1",
+                "id": "young_pH_sensor_1",
+                "group": "young_pH_sensor",
+                "order": 1
+            },
+            {
+                "title": "sensor 2",
+                "id": "young_pH_sensor_2",
+                "group": "young_pH_sensor",
+                "order": 2
+            },
+            {
+                "title": "Sensor flow water",
+                "id": "young_sensor_flow_water",
+                "group": "young_fish",
+                "order": 8
+            },
+            {
+                "title": "Pool",
+                "id": "young_Pool",
+                "group": "young_fish",
+                "order": 9
+            },
+            {
+                "title": "PoolTemp",
+                "id": "young_Pool_temp",
+                "group": "young_pool",
+                "order": 1
+            },
+            {
+                "title": "Pool1",
+                "id": "young_Pool_1",
+                "group": "young_pool",
+                "order": 2
+            },
+            {
+                "title": "Pool2",
+                "id": "young_Pool_2",
+                "group": "young_pool",
+                "order": 3
+            },
+            {
+                "title": "Pool3",
+                "id": "young_Pool_3",
+                "group": "young_pool",
+                "order": 4
+            },
+            {
+                "title": "Pool4",
+                "id": "young_Pool_4",
+                "group": "young_pool",
+                "order": 5
+            },
+            {
+                "title": "Pool5",
+                "id": "young_Pool_5",
+                "group": "young_pool",
+                "order": 6
+            },
+            {
+                "title": "Pool6",
+                "id": "young_Pool_6",
+                "group": "young_pool",
+                "order": 7
+            },
+            {
+                "title": "Pool7",
+                "id": "young_Pool_7",
+                "group": "young_pool",
+                "order": 8
+            },
+            {
+                "title": "Pool8",
+                "id": "young_Pool_8",
+                "group": "young_pool",
+                "order": 9
+            },
+            {
+                "title": "Pool9",
+                "id": "young_Pool_9",
+                "group": "young_pool",
+                "order": 10
+            },
+            {
+                "title": "Pool10",
+                "id": "young_Pool_10",
+                "group": "young_pool",
+                "order": 11
+            },
+            {
+                "title": "Pool11",
+                "id": "young_Pool_11",
+                "group": "young_pool",
+                "order": 12
+            },
+            {
+                "title": "Pool12",
+                "id": "young_Pool_12",
+                "group": "young_pool",
+                "order": 13
+            },
+            {
+                "title": "Pool13",
+                "id": "young_Pool_13",
+                "group": "young_pool",
+                "order": 14
+            },
+            {
+                "title": "Pool14",
+                "id": "young_Pool_14",
+                "group": "young_pool",
+                "order": 15
+            },
+            {
+                "title": "Pool15",
+                "id": "young_Pool_15",
+                "group": "young_pool",
+                "order": 16
+            },
+            {
+                "title": "Pool16",
+                "id": "young_Pool_16",
+                "group": "young_pool",
+                "order": 17
+            },
+            {
+                "title": "Pool17",
+                "id": "young_Pool_17",
+                "group": "young_pool",
+                "order": 18
+            },
+            {
+                "title": "Pool18",
+                "id": "young_Pool_18",
+                "group": "young_pool",
+                "order": 19
+            },
+            {
+                "title": "Pool19",
+                "id": "young_Pool_19",
+                "group": "young_pool",
+                "order": 20
+            },
+            {
+                "title": "Pool20",
+                "id": "young_Pool_20",
+                "group": "young_pool",
+                "order": 21
+            },
+            {
+                "title": "Pool21",
+                "id": "young_Pool_21",
+                "group": "young_pool",
+                "order": 22
+            },
+            {
+                "title": "Pool22",
+                "id": "young_Pool_22",
+                "group": "young_pool",
+                "order": 23
+            },
+            {
+                "title": "Pool23",
+                "id": "young_Pool_23",
+                "group": "young_pool",
+                "order": 24
+            },
+            {
+                "title": "Pool24",
+                "id": "young_Pool_24",
+                "group": "young_pool",
+                "order": 25
+            },
+            {
+                "title": "Pool25",
+                "id": "young_Pool_25",
+                "group": "young_pool",
+                "order": 26
+            },
+            {
+                "title": "Pool26",
+                "id": "young_Pool_26",
+                "group": "young_pool",
+                "order": 27
+            }
+        ],
+        "channels": [
+            {
+                "name": "Summator level",
+                "reg_type": "holding",
+                "address": "0x03E8",
+                "type": "value",
+                "format": "u16",
+                "group": "young_summator",
+                "order": 1
+            },
+            {
+                "name": "Sensor flow1",
+                "reg_type": "holding",
+                "address": "0x03F2",
+                "type": "value",
+                "format": "u16",
+                "group": "young_system",
+                "order": 1
+            },
+            {
+                "name": "Sensor flow2",
+                "reg_type": "holding",
+                "address": "0x03F4",
+                "type": "value",
+                "format": "u16",
+                "group": "young_system",
+                "readonly": true,
+                "order": 2
+            },
+            {
+                "name": "oxygen_status",
+                "reg_type": "holding",
+                "address": "0x04C4",
+                "type": "value",
+                "group": "young_oxygen_sensor_1",
+                "order": 1
+            },
+            {
+                "name": "oxygen",
+                "reg_type": "holding",
+                "address": "0x04C5",
+                "type": "value",
+                "format": "u16",
+                "group": "young_oxygen_sensor_1",
+                "order": 2
+            },
+            {
+                "name": "temperature",
+                "reg_type": "holding",
+                "address": "0x04C6",
+                "type": "value",
+                "format": "u16",
+                "group": "young_oxygen_sensor_1",
+                "order": 3
+            },
+            {
+                "name": "calibration status",
+                "reg_type": "holding",
+                "address": "0x04CA",
+                "type": "value",
+                "format": "u16",
+                "group": "young_oxygen_sensor_1",
+                "enabled": true,
+                "order": 4
+            },
+            {
+                "name": "Reset",
+                "reg_type": "holding",
+                "address": "0x04CB",
+                "type": "value",
+                "group": "young_oxygen_sensor_1",
+                "order": 5
+            },
+            {
+                "name": "Air calibratio",
+                "reg_type": "holding",
+                "address": "0x04CC",
+                "type": "value",
+                "group": "young_oxygen_sensor_1",
+                "order": 6
+            },
+            {
+                "name": "Zero calibratio",
+                "reg_type": "holding",
+                "address": "0x04CD",
+                "type": "value",
+                "group": "young_oxygen_sensor_1",
+                "order": 7
+            },
+            {
+                "name": "Exit calibration",
+                "reg_type": "holding",
+                "address": "0x04CE",
+                "type": "value",
+                "group": "young_oxygen_sensor_1",
+                "order": 8
+            },
+            {
+                "name": "oxygen_status",
+                "reg_type": "holding",
+                "address": "0x04D3",
+                "type": "value",
+                "group": "young_oxygen_sensor_2",
+                "order": 1
+            },
+            {
+                "name": "oxygen",
+                "reg_type": "holding",
+                "address": "0x04D4",
+                "type": "value",
+                "format": "u16",
+                "group": "young_oxygen_sensor_2",
+                "order": 2
+            },
+            {
+                "name": "temperature",
+                "reg_type": "holding",
+                "address": "0x04D5",
+                "type": "value",
+                "format": "u16",
+                "group": "young_oxygen_sensor_2",
+                "order": 3
+            },
+            {
+                "name": "calibration status",
+                "reg_type": "holding",
+                "address": "0x04D9",
+                "type": "value",
+                "format": "u16",
+                "group": "young_oxygen_sensor_2",
+                "enabled": true,
+                "order": 4
+            },
+            {
+                "name": "Reset",
+                "reg_type": "holding",
+                "address": "0x04DA",
+                "type": "value",
+                "group": "young_oxygen_sensor_2",
+                "order": 5
+            },
+            {
+                "name": "Air calibratio",
+                "reg_type": "holding",
+                "address": "0x04DB",
+                "type": "value",
+                "group": "young_oxygen_sensor_2",
+                "order": 6
+            },
+            {
+                "name": "Zero calibratio",
+                "reg_type": "holding",
+                "address": "0x04DC",
+                "type": "value",
+                "group": "young_oxygen_sensor_2",
+                "order": 7
+            },
+            {
+                "name": "Exit calibration",
+                "reg_type": "holding",
+                "address": "0x04DD",
+                "type": "value",
+                "group": "young_oxygen_sensor_2",
+                "order": 8
+            },
+            {
+                "name": "pH status",
+                "reg_type": "holding",
+                "address": "0x0514",
+                "type": "value",
+                "group": "young_pH_sensor_1",
+                "order": 1
+            },
+            {
+                "name": "pH",
+                "reg_type": "holding",
+                "address": "0x0515",
+                "type": "value",
+                "group": "young_pH_sensor_1",
+                "order": 2
+            },
+            {
+                "name": "pH temperature",
+                "reg_type": "holding",
+                "address": "0x0516",
+                "type": "value",
+                "group": "young_pH_sensor_1",
+                "order": 3
+            },
+            {
+                "name": "deviation pH",
+                "reg_type": "holding",
+                "address": "0x0517",
+                "type": "value",
+                "group": "young_pH_sensor_1",
+                "order": 3
+            },
+            {
+                "name": "deviation °C",
+                "reg_type": "holding",
+                "address": "0x0518",
+                "type": "value",
+                "group": "young_pH_sensor_1",
+                "order": 4
+            },
+            {
+                "name": "ferst calibration",
+                "reg_type": "holding",
+                "address": "0x0519",
+                "type": "value",
+                "group": "young_pH_sensor_1",
+                "order": 5
+            },
+            {
+                "name": "second calibration",
+                "reg_type": "holding",
+                "address": "0x051A",
+                "type": "value",
+                "group": "young_pH_sensor_1",
+                "order": 6
+            },
+            {
+                "name": "pH_4.01",
+                "reg_type": "holding",
+                "address": "0x051B",
+                "type": "value",
+                "group": "young_pH_sensor_1",
+                "order": 7
+            },
+            {
+                "name": "pH_6.86",
+                "reg_type": "holding",
+                "address": "0x051C",
+                "type": "value",
+                "group": "young_pH_sensor_1",
+                "order": 8
+            },
+            {
+                "name": "pH_7.01",
+                "reg_type": "holding",
+                "address": "0x051D",
+                "type": "value",
+                "group": "young_pH_sensor_1",
+                "order": 9
+            },
+            {
+                "name": "pH_9.18",
+                "reg_type": "holding",
+                "address": "0x051E",
+                "type": "value",
+                "group": "young_pH_sensor_1",
+                "order": 10
+            },
+            {
+                "name": "pH_10.01",
+                "reg_type": "holding",
+                "address": "0x051F",
+                "type": "value",
+                "group": "young_pH_sensor_1",
+                "order": 11
+            },
+            {
+                "name": "status",
+                "reg_type": "holding",
+                "address": "0x0640",
+                "type": "value",
+                "group": "young_Pool_temp",
+                "order": 1
+            },
+            {
+                "name": "level",
+                "reg_type": "holding",
+                "address": "0x0641",
+                "type": "value",
+                "group": "young_Pool_temp",
+                "order": 2
+            },
+            {
+                "name": "id",
+                "reg_type": "holding",
+                "address": "0x0642",
+                "type": "value",
+                "group": "young_Pool_temp",
+                "order": 3
+            },
+            {
+                "name": "volume",
+                "reg_type": "holding",
+                "address": "0x0643",
+                "type": "value",
+                "group": "young_Pool_temp",
+                "order": 4
+            },
+            {
+                "name": "weight",
+                "reg_type": "holding",
+                "address": "0x0644",
+                "type": "value",
+                "group": "young_Pool_temp",
+                "order": 5
+            },
+            {
+                "name": "type",
+                "reg_type": "holding",
+                "address": "0x0645",
+                "type": "value",
+                "group": "young_Pool_temp",
+                "order": 6
+            },
+            {
+                "name": "read_write",
+                "reg_type": "holding",
+                "address": "0x064F",
+                "type": "value",
+                "group": "young_Pool_temp",
+                "order": 7
+            },
+            {
+                "name": "warning",
+                "reg_type": "holding",
+                "address": "0x0652",
+                "type": "value",
+                "group": "young_Pool_temp",
+                "order": 8
+            },
+            {
+                "name": "status",
+                "reg_type": "holding",
+                "address": "0x0654",
+                "type": "value",
+                "group": "young_Pool_1",
+                "order": 1
+            },
+            {
+                "name": "level",
+                "reg_type": "holding",
+                "address": "0x0655",
+                "type": "value",
+                "group": "young_Pool_1",
+                "order": 2
+            },
+            {
+                "name": "id",
+                "reg_type": "holding",
+                "address": "0x0656",
+                "type": "value",
+                "group": "young_Pool_1",
+                "order": 3
+            },
+            {
+                "name": "volume",
+                "reg_type": "holding",
+                "address": "0x0657",
+                "type": "value",
+                "group": "young_Pool_1",
+                "order": 4
+            },
+            {
+                "name": "weight",
+                "reg_type": "holding",
+                "address": "0x0658,
+                "type": "value",
+                "group": "young_Pool_1",
+                "order": 5
+            },
+            {
+                "name": "type",
+                "reg_type": "holding",
+                "address": "0x0659",
+                "type": "value",
+                "group": "young_Pool_1",
+                "order": 6
+            },
+            {
+                "name": "status",
+                "reg_type": "holding",
+                "address": "0x0668",
+                "type": "value",
+                "group": "young_Pool_2",
+                "order": 1
+            },
+            {
+                "name": "level",
+                "reg_type": "holding",
+                "address": "0x0669",
+                "type": "value",
+                "group": "young_Pool_2",
+                "order": 2
+            },
+            {
+                "name": "id",
+                "reg_type": "holding",
+                "address": "0x066A",
+                "type": "value",
+                "group": "young_Pool_2",
+                "order": 3
+            },
+            {
+                "name": "volume",
+                "reg_type": "holding",
+                "address": "0x066B",
+                "type": "value",
+                "group": "young_Pool_2",
+                "order": 4
+            },
+            {
+                "name": "weight",
+                "reg_type": "holding",
+                "address": "0x066C,
+                "type": "value",
+                "group": "young_Pool_2",
+                "order": 5
+            },
+            {
+                "name": "type",
+                "reg_type": "holding",
+                "address": "0x066D",
+                "type": "value",
+                "group": "young_Pool_2",
+                "order": 6
+            },
+            {
+                "name": "status",
+                "reg_type": "holding",
+                "address": "0x067C",
+                "type": "value",
+                "group": "young_Pool_3",
+                "order": 1
+            },
+            {
+                "name": "level",
+                "reg_type": "holding",
+                "address": "0x067D",
+                "type": "value",
+                "group": "young_Pool_3",
+                "order": 2
+            },
+            {
+                "name": "id",
+                "reg_type": "holding",
+                "address": "0x067E",
+                "type": "value",
+                "group": "young_Pool_3",
+                "order": 3
+            },
+            {
+                "name": "volume",
+                "reg_type": "holding",
+                "address": "0x067F",
+                "type": "value",
+                "group": "young_Pool_3",
+                "order": 4
+            },
+            {
+                "name": "weight",
+                "reg_type": "holding",
+                "address": "0x0680,
+                "type": "value",
+                "group": "young_Pool_3",
+                "order": 5
+            },
+            {
+                "name": "type",
+                "reg_type": "holding",
+                "address": "0x0681",
+                "type": "value",
+                "group": "young_Pool_3",
+                "order": 6
+            },
+            {
+                "name": "status",
+                "reg_type": "holding",
+                "address": "0x0690",
+                "type": "value",
+                "group": "young_Pool_4",
+                "order": 1
+            },
+            {
+                "name": "level",
+                "reg_type": "holding",
+                "address": "0x0691",
+                "type": "value",
+                "group": "young_Pool_4",
+                "order": 2
+            },
+            {
+                "name": "id",
+                "reg_type": "holding",
+                "address": "0x0692",
+                "type": "value",
+                "group": "young_Pool_4",
+                "order": 3
+            },
+            {
+                "name": "volume",
+                "reg_type": "holding",
+                "address": "0x0693",
+                "type": "value",
+                "group": "young_Pool_4",
+                "order": 4
+            },
+            {
+                "name": "weight",
+                "reg_type": "holding",
+                "address": "0x0694,
+                "type": "value",
+                "group": "young_Pool_4",
+                "order": 5
+            },
+            {
+                "name": "type",
+                "reg_type": "holding",
+                "address": "0x0695",
+                "type": "value",
+                "group": "young_Pool_4",
+                "order": 6
+            },
+            {
+                "name": "status",
+                "reg_type": "holding",
+                "address": "0x06A4",
+                "type": "value",
+                "group": "young_Pool_5",
+                "order": 1
+            },
+            {
+                "name": "level",
+                "reg_type": "holding",
+                "address": "0x06A5",
+                "type": "value",
+                "group": "young_Pool_5",
+                "order": 2
+            },
+            {
+                "name": "id",
+                "reg_type": "holding",
+                "address": "0x06A6",
+                "type": "value",
+                "group": "young_Pool_5",
+                "order": 3
+            },
+            {
+                "name": "volume",
+                "reg_type": "holding",
+                "address": "0x06A7",
+                "type": "value",
+                "group": "young_Pool_5",
+                "order": 4
+            },
+            {
+                "name": "weight",
+                "reg_type": "holding",
+                "address": "0x06A8,
+                "type": "value",
+                "group": "young_Pool_5",
+                "order": 5
+            },
+            {
+                "name": "type",
+                "reg_type": "holding",
+                "address": "0x06A9",
+                "type": "value",
+                "group": "young_Pool_5",
+                "order": 6
+            },
+            {
+                "name": "status",
+                "reg_type": "holding",
+                "address": "0x06B8",
+                "type": "value",
+                "group": "young_Pool_6",
+                "order": 1
+            },
+            {
+                "name": "level",
+                "reg_type": "holding",
+                "address": "0x06B9",
+                "type": "value",
+                "group": "young_Pool_6",
+                "order": 2
+            },
+            {
+                "name": "id",
+                "reg_type": "holding",
+                "address": "0x06BA",
+                "type": "value",
+                "group": "young_Pool_6",
+                "order": 3
+            },
+            {
+                "name": "volume",
+                "reg_type": "holding",
+                "address": "0x06BB",
+                "type": "value",
+                "group": "young_Pool_6",
+                "order": 4
+            },
+            {
+                "name": "weight",
+                "reg_type": "holding",
+                "address": "0x06BC,
+                "type": "value",
+                "group": "young_Pool_6",
+                "order": 5
+            },
+            {
+                "name": "type",
+                "reg_type": "holding",
+                "address": "0x06BD",
+                "type": "value",
+                "group": "young_Pool_6",
+                "order": 6
+            },
+            {
+                "name": "status",
+                "reg_type": "holding",
+                "address": "0x06CC",
+                "type": "value",
+                "group": "young_Pool_7",
+                "order": 1
+            },
+            {
+                "name": "level",
+                "reg_type": "holding",
+                "address": "0x06CD",
+                "type": "value",
+                "group": "young_Pool_7",
+                "order": 2
+            },
+            {
+                "name": "id",
+                "reg_type": "holding",
+                "address": "0x06CE",
+                "type": "value",
+                "group": "young_Pool_7",
+                "order": 3
+            },
+            {
+                "name": "volume",
+                "reg_type": "holding",
+                "address": "0x06CF",
+                "type": "value",
+                "group": "young_Pool_7",
+                "order": 4
+            },
+            {
+                "name": "weight",
+                "reg_type": "holding",
+                "address": "0x06D0,
+                "type": "value",
+                "group": "young_Pool_7",
+                "order": 5
+            },
+            {
+                "name": "type",
+                "reg_type": "holding",
+                "address": "0x06D1",
+                "type": "value",
+                "group": "young_Pool_7",
+                "order": 6
+            },
+            {
+                "name": "status",
+                "reg_type": "holding",
+                "address": "0x06E0",
+                "type": "value",
+                "group": "young_Pool_8",
+                "order": 1
+            },
+            {
+                "name": "level",
+                "reg_type": "holding",
+                "address": "0x06E1",
+                "type": "value",
+                "group": "young_Pool_8",
+                "order": 2
+            },
+            {
+                "name": "id",
+                "reg_type": "holding",
+                "address": "0x06E2",
+                "type": "value",
+                "group": "young_Pool_8",
+                "order": 3
+            },
+            {
+                "name": "volume",
+                "reg_type": "holding",
+                "address": "0x06E3",
+                "type": "value",
+                "group": "young_Pool_8",
+                "order": 4
+            },
+            {
+                "name": "weight",
+                "reg_type": "holding",
+                "address": "0x06E4,
+                "type": "value",
+                "group": "young_Pool_8",
+                "order": 5
+            },
+            {
+                "name": "type",
+                "reg_type": "holding",
+                "address": "0x06E5",
+                "type": "value",
+                "group": "young_Pool_8",
+                "order": 6
+            },
+            {
+                "name": "status",
+                "reg_type": "holding",
+                "address": "0x06F4",
+                "type": "value",
+                "group": "young_Pool_9",
+                "order": 1
+            },
+            {
+                "name": "level",
+                "reg_type": "holding",
+                "address": "0x06F5",
+                "type": "value",
+                "group": "young_Pool_9",
+                "order": 2
+            },
+            {
+                "name": "id",
+                "reg_type": "holding",
+                "address": "0x06F6",
+                "type": "value",
+                "group": "young_Pool_9",
+                "order": 3
+            },
+            {
+                "name": "volume",
+                "reg_type": "holding",
+                "address": "0x06F7",
+                "type": "value",
+                "group": "young_Pool_9",
+                "order": 4
+            },
+            {
+                "name": "weight",
+                "reg_type": "holding",
+                "address": "0x06F8,
+                "type": "value",
+                "group": "young_Pool_9",
+                "order": 5
+            },
+            {
+                "name": "type",
+                "reg_type": "holding",
+                "address": "0x06F9",
+                "type": "value",
+                "group": "young_Pool_9",
+                "order": 6
+            },
+            {
+                "name": "status",
+                "reg_type": "holding",
+                "address": "0x0708",
+                "type": "value",
+                "group": "young_Pool_10",
+                "order": 1
+            },
+            {
+                "name": "level",
+                "reg_type": "holding",
+                "address": "0x0709",
+                "type": "value",
+                "group": "young_Pool_10",
+                "order": 2
+            },
+            {
+                "name": "id",
+                "reg_type": "holding",
+                "address": "0x070A",
+                "type": "value",
+                "group": "young_Pool_10",
+                "order": 3
+            },
+            {
+                "name": "volume",
+                "reg_type": "holding",
+                "address": "0x070B",
+                "type": "value",
+                "group": "young_Pool_10",
+                "order": 4
+            },
+            {
+                "name": "weight",
+                "reg_type": "holding",
+                "address": "0x070C,
+                "type": "value",
+                "group": "young_Pool_10",
+                "order": 5
+            },
+            {
+                "name": "type",
+                "reg_type": "holding",
+                "address": "0x070D",
+                "type": "value",
+                "group": "young_Pool_10",
+                "order": 6
+            },
+            {
+                "name": "status",
+                "reg_type": "holding",
+                "address": "0x071C",
+                "type": "value",
+                "group": "young_Pool_11",
+                "order": 1
+            },
+            {
+                "name": "level",
+                "reg_type": "holding",
+                "address": "0x071D",
+                "type": "value",
+                "group": "young_Pool_11",
+                "order": 2
+            },
+            {
+                "name": "id",
+                "reg_type": "holding",
+                "address": "0x071E",
+                "type": "value",
+                "group": "young_Pool_11",
+                "order": 3
+            },
+            {
+                "name": "volume",
+                "reg_type": "holding",
+                "address": "0x071F",
+                "type": "value",
+                "group": "young_Pool_11",
+                "order": 4
+            },
+            {
+                "name": "weight",
+                "reg_type": "holding",
+                "address": "0x0720,
+                "type": "value",
+                "group": "young_Pool_11",
+                "order": 5
+            },
+            {
+                "name": "type",
+                "reg_type": "holding",
+                "address": "0x0721",
+                "type": "value",
+                "group": "young_Pool_11",
+                "order": 6
+            },
+            {
+                "name": "status",
+                "reg_type": "holding",
+                "address": "0x0730",
+                "type": "value",
+                "group": "young_Pool_12",
+                "order": 1
+            },
+            {
+                "name": "level",
+                "reg_type": "holding",
+                "address": "0x0731",
+                "type": "value",
+                "group": "young_Pool_12",
+                "order": 2
+            },
+            {
+                "name": "id",
+                "reg_type": "holding",
+                "address": "0x0732",
+                "type": "value",
+                "group": "young_Pool_12",
+                "order": 3
+            },
+            {
+                "name": "volume",
+                "reg_type": "holding",
+                "address": "0x0733",
+                "type": "value",
+                "group": "young_Pool_12",
+                "order": 4
+            },
+            {
+                "name": "weight",
+                "reg_type": "holding",
+                "address": "0x0734,
+                "type": "value",
+                "group": "young_Pool_12",
+                "order": 5
+            },
+            {
+                "name": "type",
+                "reg_type": "holding",
+                "address": "0x0735",
+                "type": "value",
+                "group": "young_Pool_12",
+                "order": 6
+            },
+            {
+                "name": "status",
+                "reg_type": "holding",
+                "address": "0x0744",
+                "type": "value",
+                "group": "young_Pool_13",
+                "order": 1
+            },
+            {
+                "name": "level",
+                "reg_type": "holding",
+                "address": "0x0745",
+                "type": "value",
+                "group": "young_Pool_13",
+                "order": 2
+            },
+            {
+                "name": "id",
+                "reg_type": "holding",
+                "address": "0x0746",
+                "type": "value",
+                "group": "young_Pool_13",
+                "order": 3
+            },
+            {
+                "name": "volume",
+                "reg_type": "holding",
+                "address": "0x0747",
+                "type": "value",
+                "group": "young_Pool_13",
+                "order": 4
+            },
+            {
+                "name": "weight",
+                "reg_type": "holding",
+                "address": "0x0748",
+                "type": "value",
+                "group": "young_Pool_13",
+                "order": 5
+            },
+            {
+                "name": "type",
+                "reg_type": "holding",
+                "address": "0x0749",
+                "type": "value",
+                "group": "young_Pool_13",
+                "order": 6
+            },
+            {
+                "name": "status",
+                "reg_type": "holding",
+                "address": "0x0758",
+                "type": "value",
+                "group": "young_Pool_14",
+                "order": 1
+            },
+            {
+                "name": "level",
+                "reg_type": "holding",
+                "address": "0x0759",
+                "type": "value",
+                "group": "young_Pool_14",
+                "order": 2
+            },
+            {
+                "name": "id",
+                "reg_type": "holding",
+                "address": "0x075A",
+                "type": "value",
+                "group": "young_Pool_14",
+                "order": 3
+            },
+            {
+                "name": "volume",
+                "reg_type": "holding",
+                "address": "0x075B",
+                "type": "value",
+                "group": "young_Pool_14",
+                "order": 4
+            },
+            {
+                "name": "weight",
+                "reg_type": "holding",
+                "address": "0x075C,
+                "type": "value",
+                "group": "young_Pool_14",
+                "order": 5
+            },
+            {
+                "name": "type",
+                "reg_type": "holding",
+                "address": "0x075D",
+                "type": "value",
+                "group": "young_Pool_14",
+                "order": 6
+            },
+            {
+                "name": "status",
+                "reg_type": "holding",
+                "address": "0x076C",
+                "type": "value",
+                "group": "young_Pool_15",
+                "order": 1
+            },
+            {
+                "name": "level",
+                "reg_type": "holding",
+                "address": "0x076D",
+                "type": "value",
+                "group": "young_Pool_15",
+                "order": 2
+            },
+            {
+                "name": "id",
+                "reg_type": "holding",
+                "address": "0x076E",
+                "type": "value",
+                "group": "young_Pool_15",
+                "order": 3
+            },
+            {
+                "name": "volume",
+                "reg_type": "holding",
+                "address": "0x076F",
+                "type": "value",
+                "group": "young_Pool_15",
+                "order": 4
+            },
+            {
+                "name": "weight",
+                "reg_type": "holding",
+                "address": "0x0770,
+                "type": "value",
+                "group": "young_Pool_15",
+                "order": 5
+            },
+            {
+                "name": "type",
+                "reg_type": "holding",
+                "address": "0x0771",
+                "type": "value",
+                "group": "young_Pool_15",
+                "order": 6
+            },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            {
+                "name": "status",
+                "reg_type": "holding",
+                "address": "0x0654",
+                "type": "value",
+                "group": "young_Pool_1",
+                "order": 1
+            },
+            {
+                "name": "level",
+                "reg_type": "holding",
+                "address": "0x0655",
+                "type": "value",
+                "group": "young_Pool_1",
+                "order": 2
+            },
+            {
+                "name": "id",
+                "reg_type": "holding",
+                "address": "0x0656",
+                "type": "value",
+                "group": "young_Pool_1",
+                "order": 3
+            },
+            {
+                "name": "volume",
+                "reg_type": "holding",
+                "address": "0x0657",
+                "type": "value",
+                "group": "young_Pool_1",
+                "order": 4
+            },
+            {
+                "name": "weight",
+                "reg_type": "holding",
+                "address": "0x0658,
+                "type": "value",
+                "group": "young_Pool_1",
+                "order": 5
+            },
+            {
+                "name": "type",
+                "reg_type": "holding",
+                "address": "0x0659",
+                "type": "value",
+                "group": "young_Pool_1",
+                "order": 6
+            },
+            {
+                "name": "status",
+                "reg_type": "holding",
+                "address": "0x0654",
+                "type": "value",
+                "group": "young_Pool_1",
+                "order": 1
+            },
+            {
+                "name": "level",
+                "reg_type": "holding",
+                "address": "0x0655",
+                "type": "value",
+                "group": "young_Pool_1",
+                "order": 2
+            },
+            {
+                "name": "id",
+                "reg_type": "holding",
+                "address": "0x0656",
+                "type": "value",
+                "group": "young_Pool_1",
+                "order": 3
+            },
+            {
+                "name": "volume",
+                "reg_type": "holding",
+                "address": "0x0657",
+                "type": "value",
+                "group": "young_Pool_1",
+                "order": 4
+            },
+            {
+                "name": "weight",
+                "reg_type": "holding",
+                "address": "0x0658,
+                "type": "value",
+                "group": "young_Pool_1",
+                "order": 5
+            },
+            {
+                "name": "type",
+                "reg_type": "holding",
+                "address": "0x0659",
+                "type": "value",
+                "group": "young_Pool_1",
+                "order": 6
+            },
+            {
+                "name": "status",
+                "reg_type": "holding",
+                "address": "0x0654",
+                "type": "value",
+                "group": "young_Pool_1",
+                "order": 1
+            },
+            {
+                "name": "level",
+                "reg_type": "holding",
+                "address": "0x0655",
+                "type": "value",
+                "group": "young_Pool_1",
+                "order": 2
+            },
+            {
+                "name": "id",
+                "reg_type": "holding",
+                "address": "0x0656",
+                "type": "value",
+                "group": "young_Pool_1",
+                "order": 3
+            },
+            {
+                "name": "volume",
+                "reg_type": "holding",
+                "address": "0x0657",
+                "type": "value",
+                "group": "young_Pool_1",
+                "order": 4
+            },
+            {
+                "name": "weight",
+                "reg_type": "holding",
+                "address": "0x0658,
+                "type": "value",
+                "group": "young_Pool_1",
+                "order": 5
+            },
+            {
+                "name": "type",
+                "reg_type": "holding",
+                "address": "0x0659",
+                "type": "value",
+                "group": "young_Pool_1",
+                "order": 6
+            },
+            {
+                "name": "status",
+                "reg_type": "holding",
+                "address": "0x0654",
+                "type": "value",
+                "group": "young_Pool_1",
+                "order": 1
+            },
+            {
+                "name": "level",
+                "reg_type": "holding",
+                "address": "0x0655",
+                "type": "value",
+                "group": "young_Pool_1",
+                "order": 2
+            },
+            {
+                "name": "id",
+                "reg_type": "holding",
+                "address": "0x0656",
+                "type": "value",
+                "group": "young_Pool_1",
+                "order": 3
+            },
+            {
+                "name": "volume",
+                "reg_type": "holding",
+                "address": "0x0657",
+                "type": "value",
+                "group": "young_Pool_1",
+                "order": 4
+            },
+            {
+                "name": "weight",
+                "reg_type": "holding",
+                "address": "0x0658,
+                "type": "value",
+                "group": "young_Pool_1",
+                "order": 5
+            },
+            {
+                "name": "type",
+                "reg_type": "holding",
+                "address": "0x0659",
+                "type": "value",
+                "group": "young_Pool_1",
+                "order": 6
+            },
+            {
+                "name": "status",
+                "reg_type": "holding",
+                "address": "0x0654",
+                "type": "value",
+                "group": "young_Pool_1",
+                "order": 1
+            },
+            {
+                "name": "level",
+                "reg_type": "holding",
+                "address": "0x0655",
+                "type": "value",
+                "group": "young_Pool_1",
+                "order": 2
+            },
+            {
+                "name": "id",
+                "reg_type": "holding",
+                "address": "0x0656",
+                "type": "value",
+                "group": "young_Pool_1",
+                "order": 3
+            },
+            {
+                "name": "volume",
+                "reg_type": "holding",
+                "address": "0x0657",
+                "type": "value",
+                "group": "young_Pool_1",
+                "order": 4
+            },
+            {
+                "name": "weight",
+                "reg_type": "holding",
+                "address": "0x0658,
+                "type": "value",
+                "group": "young_Pool_1",
+                "order": 5
+            },
+            {
+                "name": "type",
+                "reg_type": "holding",
+                "address": "0x0659",
+                "type": "value",
+                "group": "young_Pool_1",
+                "order": 6
+            },
+            {
+                "name": "status",
+                "reg_type": "holding",
+                "address": "0x0654",
+                "type": "value",
+                "group": "young_Pool_1",
+                "order": 1
+            },
+            {
+                "name": "level",
+                "reg_type": "holding",
+                "address": "0x0655",
+                "type": "value",
+                "group": "young_Pool_1",
+                "order": 2
+            },
+            {
+                "name": "id",
+                "reg_type": "holding",
+                "address": "0x0656",
+                "type": "value",
+                "group": "young_Pool_1",
+                "order": 3
+            },
+            {
+                "name": "volume",
+                "reg_type": "holding",
+                "address": "0x0657",
+                "type": "value",
+                "group": "young_Pool_1",
+                "order": 4
+            },
+            {
+                "name": "weight",
+                "reg_type": "holding",
+                "address": "0x0658,
+                "type": "value",
+                "group": "young_Pool_1",
+                "order": 5
+            },
+            {
+                "name": "type",
+                "reg_type": "holding",
+                "address": "0x0659",
+                "type": "value",
+                "group": "young_Pool_1",
+                "order": 6
+            },
+            {
+                "name": "status",
+                "reg_type": "holding",
+                "address": "0x0654",
+                "type": "value",
+                "group": "young_Pool_1",
+                "order": 1
+            },
+            {
+                "name": "level",
+                "reg_type": "holding",
+                "address": "0x0655",
+                "type": "value",
+                "group": "young_Pool_1",
+                "order": 2
+            },
+            {
+                "name": "id",
+                "reg_type": "holding",
+                "address": "0x0656",
+                "type": "value",
+                "group": "young_Pool_1",
+                "order": 3
+            },
+            {
+                "name": "volume",
+                "reg_type": "holding",
+                "address": "0x0657",
+                "type": "value",
+                "group": "young_Pool_1",
+                "order": 4
+            },
+            {
+                "name": "weight",
+                "reg_type": "holding",
+                "address": "0x0658,
+                "type": "value",
+                "group": "young_Pool_1",
+                "order": 5
+            },
+            {
+                "name": "type",
+                "reg_type": "holding",
+                "address": "0x0659",
+                "type": "value",
+                "group": "young_Pool_1",
+                "order": 6
+            },
+            {
+                "name": "status",
+                "reg_type": "holding",
+                "address": "0x0654",
+                "type": "value",
+                "group": "young_Pool_1",
+                "order": 1
+            },
+            {
+                "name": "level",
+                "reg_type": "holding",
+                "address": "0x0655",
+                "type": "value",
+                "group": "young_Pool_1",
+                "order": 2
+            },
+            {
+                "name": "id",
+                "reg_type": "holding",
+                "address": "0x0656",
+                "type": "value",
+                "group": "young_Pool_1",
+                "order": 3
+            },
+            {
+                "name": "volume",
+                "reg_type": "holding",
+                "address": "0x0657",
+                "type": "value",
+                "group": "young_Pool_1",
+                "order": 4
+            },
+            {
+                "name": "weight",
+                "reg_type": "holding",
+                "address": "0x0658,
+                "type": "value",
+                "group": "young_Pool_1",
+                "order": 5
+            },
+            {
+                "name": "type",
+                "reg_type": "holding",
+                "address": "0x0659",
+                "type": "value",
+                "group": "young_Pool_1",
+                "order": 6
+            },
+            {
+                "name": "status",
+                "reg_type": "holding",
+                "address": "0x0654",
+                "type": "value",
+                "group": "young_Pool_1",
+                "order": 1
+            },
+            {
+                "name": "level",
+                "reg_type": "holding",
+                "address": "0x0655",
+                "type": "value",
+                "group": "young_Pool_1",
+                "order": 2
+            },
+            {
+                "name": "id",
+                "reg_type": "holding",
+                "address": "0x0656",
+                "type": "value",
+                "group": "young_Pool_1",
+                "order": 3
+            },
+            {
+                "name": "volume",
+                "reg_type": "holding",
+                "address": "0x0657",
+                "type": "value",
+                "group": "young_Pool_1",
+                "order": 4
+            },
+            {
+                "name": "weight",
+                "reg_type": "holding",
+                "address": "0x0658,
+                "type": "value",
+                "group": "young_Pool_1",
+                "order": 5
+            },
+            {
+                "name": "type",
+                "reg_type": "holding",
+                "address": "0x0659",
+                "type": "value",
+                "group": "young_Pool_1",
+                "order": 6
+            },
+            {
+                "name": "status",
+                "reg_type": "holding",
+                "address": "0x0654",
+                "type": "value",
+                "group": "young_Pool_1",
+                "order": 1
+            },
+            {
+                "name": "level",
+                "reg_type": "holding",
+                "address": "0x0655",
+                "type": "value",
+                "group": "young_Pool_1",
+                "order": 2
+            },
+            {
+                "name": "id",
+                "reg_type": "holding",
+                "address": "0x0656",
+                "type": "value",
+                "group": "young_Pool_1",
+                "order": 3
+            },
+            {
+                "name": "volume",
+                "reg_type": "holding",
+                "address": "0x0657",
+                "type": "value",
+                "group": "young_Pool_1",
+                "order": 4
+            },
+            {
+                "name": "weight",
+                "reg_type": "holding",
+                "address": "0x0658,
+                "type": "value",
+                "group": "young_Pool_1",
+                "order": 5
+            },
+            {
+                "name": "type",
+                "reg_type": "holding",
+                "address": "0x0659",
+                "type": "value",
+                "group": "young_Pool_1",
+                "order": 6
+            },
+            {
+                "name": "status",
+                "reg_type": "holding",
+                "address": "0x0654",
+                "type": "value",
+                "group": "young_Pool_1",
+                "order": 1
+            },
+            {
+                "name": "level",
+                "reg_type": "holding",
+                "address": "0x0655",
+                "type": "value",
+                "group": "young_Pool_1",
+                "order": 2
+            },
+            {
+                "name": "id",
+                "reg_type": "holding",
+                "address": "0x0656",
+                "type": "value",
+                "group": "young_Pool_1",
+                "order": 3
+            },
+            {
+                "name": "volume",
+                "reg_type": "holding",
+                "address": "0x0657",
+                "type": "value",
+                "group": "young_Pool_1",
+                "order": 4
+            },
+            {
+                "name": "weight",
+                "reg_type": "holding",
+                "address": "0x0658,
+                "type": "value",
+                "group": "young_Pool_1",
+                "order": 5
+            },
+            {
+                "name": "type",
+                "reg_type": "holding",
+                "address": "0x0659",
+                "type": "value",
+                "group": "young_Pool_1",
+                "order": 6
+            },
+            {
+                "name": "status",
+                "reg_type": "holding",
+                "address": "0x0654",
+                "type": "value",
+                "group": "young_Pool_1",
+                "order": 1
+            },
+            {
+                "name": "level",
+                "reg_type": "holding",
+                "address": "0x0655",
+                "type": "value",
+                "group": "young_Pool_1",
+                "order": 2
+            },
+            {
+                "name": "id",
+                "reg_type": "holding",
+                "address": "0x0656",
+                "type": "value",
+                "group": "young_Pool_1",
+                "order": 3
+            },
+            {
+                "name": "volume",
+                "reg_type": "holding",
+                "address": "0x0657",
+                "type": "value",
+                "group": "young_Pool_1",
+                "order": 4
+            },
+            {
+                "name": "weight",
+                "reg_type": "holding",
+                "address": "0x0658,
+                "type": "value",
+                "group": "young_Pool_1",
+                "order": 5
+            },
+            {
+                "name": "type",
+                "reg_type": "holding",
+                "address": "0x0659",
+                "type": "value",
+                "group": "young_Pool_1",
+                "order": 6
+            },
+        ],
+        "translations": {
+            "ru": {
+                "Young fish": "Мальковый цех",
+                "Summator": "Сумматор",
+                "System": "Система",
+                "Inverter": "Частотник",
+                "Drum filter": "Барабанный фильтр",
+                "Konus": "Конус",
+                "Oxygen sensor": "Датчик кислорода",
+                "pH sensor": "Датчик pH",
+                "Valve": "Клапан",
+                "Sensor flow water": "Датчик расхода воды",
+                "Summator level": "Сумматор уровень",
+                "Summator level": "Сумматор уровень",
+                "Summator level": "Сумматор уровень",
+                "Summator level": "Сумматор уровень",
+                "Summator level": "Сумматор уровень",
+                "Summator level": "Сумматор уровень",
+                "Summator level": "Сумматор уровень",young_Pool_1
+            }
+        }
+    }
+}
+

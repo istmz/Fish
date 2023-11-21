@@ -1,0 +1,184 @@
+{
+    "device_type": "sr_201t",
+    "title": "SR-201T",
+    "group": "g-custom",
+    "device": {
+        "name": "SR-201T",
+        "id": "sr_201t",
+        "response_timeout_ms": 100,
+        "guard_interval_us": 5000,
+        "frame_timeout_ms": 0,
+        "groups": [
+            {
+                "title": "Indications",
+                "id": "indications",
+                "order": 1
+            },
+            {
+                "title": "Calibration",
+                "id": "calibration",
+                "order": 2
+            },
+            {
+                "title": "General",
+                "id": "general",
+                "order": 3
+            }
+        ],
+        "channels": [
+            {
+                "name": "Address",
+                "reg_type": "holding",
+                "address": "0x07D0",
+                "enabled": false,
+                "type": "value",
+                "format": "u16",
+                "group": "general",
+                "order": 1
+            },
+            {
+                "name": "pH",
+                "reg_type": "holding",
+                "address": "0x0000",
+                "type": "value",
+                "format": "u16",
+                "scale": 0.01,
+                "group": "indications",
+                "order": 1
+            },
+            {
+                "name": "Temperature",
+                "reg_type": "holding",
+                "address": "0x0001",
+                "type": "value",
+                "units": "°C",
+                "format": "s16",
+                "scale": 0.1,
+                "group": "indications",
+                "order": 2
+            },
+            {
+                "name": "Deviation pH",
+                "reg_type": "holding",
+                "address": "0x0050",
+                "enabled": false,
+                "type": "value",
+                "format": "s16",
+                "scale": 0.01,
+                "group": "indications",
+                "order": 3
+            },
+            {
+                "name": "Deviation °C",
+                "reg_type": "holding",
+                "address": "0x0051",
+                "enabled": false,
+                "type": "value",
+                "format": "s16",
+                "scale": 0.1,
+                "group": "indications",
+                "order": 4
+            },
+            {
+                "name": "Ferst calibration",
+                "reg_type": "holding",
+                "write_address": "0x0120",
+                "type": "pushbutton",
+                "on_value": "0x0001",
+                "group": "calibration",
+                "order": 1,
+            },
+            {
+                "name": "Second calibration",
+                "reg_type": "holding",
+                "write_address": "0x0120",
+                "type": "pushbutton",
+                "on_value": "0x0002",
+                "group": "calibration",
+                "order": 2,
+            },
+            {
+                "name": "pH 4.01",
+                "reg_type": "holding",
+                "write_address": "0x0121",
+                "type": "pushbutton",
+                "on_value": 401,
+                "group": "calibration",
+                "order": 3,
+            },
+            {
+                "name": "pH 6.86",
+                "reg_type": "holding",
+                "write_address": "0x0121",
+                "type": "pushbutton",
+                "on_value": 686,
+                "group": "calibration",
+                "order": 4,
+            },
+            {
+                "name": "pH 7.01",
+                "reg_type": "holding",
+                "write_address": "0x0121",
+                "type": "pushbutton",
+                "on_value": 701,
+                "group": "calibration",
+                "order": 5,
+            },
+            {
+                "name": "pH 9.18",
+                "reg_type": "holding",
+                "write_address": "0x0121",
+                "type": "pushbutton",
+                "on_value": 918,
+                "group": "calibration",
+                "order": 6,
+            },
+            {
+                "name": "pH 10.01",
+                "reg_type": "holding",
+                "write_address": "0x0121",
+                "type": "pushbutton",
+                "on_value": 1001,
+                "group": "calibration",
+                "order": 7,
+            }
+        ],
+        "parameters": [
+            {
+                "id": "baud_rate",
+                "title": "Baud rate",
+                "address": "0x07D1",
+                "reg_type": "holding",
+                "enum": [2400, 4800, 9600, 19200, 38400, 57600, 115200, 1200],
+                "default": 9600,
+                "enum_titles": [
+                    "2400",
+                    "4800",
+                    "9600",
+                    "19200",
+                    "38400",
+                    "57600",
+                    "115200",
+                    "1200"
+                ],
+                "group": "general",
+                "order": 1
+            }
+        ],
+        "translations": {
+            "ru": {
+                "Baud rate": "Скорость обмена",
+                "Indications": "Показания",
+                "Calibration": "Калибровка",
+                "Parameters": "Параметры",
+                "Deviation pH": "Отклонение pH",
+                "Deviation °C": "Отклонение °C",
+                "Temperature": "Температура",
+                "Ferst calibration": "Калибровка первой точки",
+                "Second calibration": "Калибровка второй точки",
+                "Address": "Адресс",
+                "General": "Общие"
+            }
+        }
+    }
+}

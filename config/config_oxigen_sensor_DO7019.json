@@ -1,0 +1,175 @@
+{
+    "device_type": "sup-do7019",
+    "title": "SUP-DO7019",
+    "group": "g-custom",
+    "device": {
+        "name": "SUP-DO7019",
+        "id": "sup_do7019",
+        "response_timeout_ms": 100,
+        "guard_interval_us": 5000,
+        "frame_timeout_ms": 0,
+        "groups": [
+            {
+                "title": "Indications",
+                "id": "indications",
+                "order": 1
+            },
+            {
+                "title": "Calibration",
+                "id": "calibration",
+                "order": 2
+            },
+            {
+                "title": "General",
+                "id": "general",
+                "order": 3
+            }
+        ],
+        "channels": [
+            {
+                "name": "Address",
+                "reg_type": "holding",
+                "address": "0x1100",
+                "enabled": false,
+                "type": "value",
+                "format": "u16",
+                "group": "general",
+                "order": 1
+            },
+            {
+                "name": "Oxygen",
+                "reg_type": "holding",
+                "address": "0x2001",
+                "units": "mg/L",
+                "type": "value",
+                "format": "u16",
+                "scale": 0.01,
+                "group": "indications",
+                "order": 1
+            },
+            {
+                "name": "Temperature",
+                "reg_type": "holding",
+                "address": "0x2003",
+                "type": "temperature",
+                "format": "s16",
+                "scale": 0.1,
+                "group": "indications",
+                "order": 3
+            },
+            {
+                "name": "Saturation",
+                "reg_type": "holding",
+                "address": "0x2005",
+                "type": "value",
+                "units": "%",
+                "format": "u16",
+                "group": "indications",
+                "order": 2
+            },
+            {
+                "name": "Air pressure",
+                "reg_type": "holding",
+                "address": "0x2009",
+                "type": "value",
+                "format": "u16",
+                "scale": 0.1,
+                "group": "indications",
+                "order": 4
+            },
+            {
+                "name": "Error",
+                "reg_type": "holding",
+                "address": "0x200D",
+                "type": "value",
+                "format": "s32",
+                "group": "indications",
+                "order": 5
+            },
+            {
+                "name": "Calibration status",
+                "reg_type": "holding",
+                "address": "0x3000",
+                "type": "value",
+                "format": "u16",
+                "group": "calibration",
+                "order": 1
+            },
+            {
+                "name": "Reset",
+                "reg_type": "holding",
+                "write_address": "0x2020",
+                "type": "pushbutton",
+                "on_value": "0x01",
+                "group": "calibration",
+                "order": 2,
+            },
+            {
+                "name": "Air calibratio",
+                "reg_type": "holding",
+                "write_address": "0x3001",
+                "type": "pushbutton",
+                "on_value": "0x0001",
+                "group": "calibration",
+                "order": 3,
+            },
+            {
+                "name": "Zero calibratio",
+                "reg_type": "holding",
+                "write_address": "0x3001",
+                "type": "pushbutton",
+                "on_value": "0x0002",
+                "group": "calibration",
+                "order": 4,
+            },
+            {
+                "name": "Exiting calibration",
+                "reg_type": "holding",
+                "write_address": "0x3003",
+                "type": "pushbutton",
+                "on_value": "0x01",
+                "group": "calibration",
+                "order": 5,
+            }
+        ],
+        "parameters": [
+            {
+                "id": "baud_rate",
+                "title": "Baud rate",
+                "address": "0x1101",
+                "reg_type": "holding",
+                "enum": [2400, 9600, 14400, 19200, 38400],
+                "default": 9600,
+                "enum_titles": [
+                    "2400",
+                    "9600",
+                    "14400",
+                    "19200",
+                    "38400"
+                ],
+                "group": "general",
+                "order": 2
+            }
+        ],
+        "translations": {
+            "ru": {
+                "Baud rate": "Скорость обмена",
+                "Indications": "Показания",
+                "Calibration": "Калибровка",
+                "Parameters": "Параметры",
+                "Oxygen": "Кислород",
+                "Saturation": "Насыщение",
+                "Temperature": "Температура",
+                "Air pressure": "Атмосферное давление",
+                "Error": "Ошибка",
+                "Calibration status": "Состояние электрода",
+                "Air calibratio": "Калибровка по воздуху",
+                "Zero calibratio": "Калибровка нуля",
+                "Calibration": "Калибровка",
+                "Exiting calibration": "Выход из калибровки",
+                "Address": "Адресс",
+                "General": "Общие"
+            }
+        }
+    }
+}
