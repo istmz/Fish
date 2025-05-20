@@ -1,0 +1,2280 @@
+{
+    "device_type": "pro-screen",
+    "title": "PRO-Screen",
+    "group": "g-control-panel",
+    "device": {
+        "name": "PRO-Screen",
+        "id": "pro_screen",
+        "response_timeout_ms": 500,
+        "guard_interval_us": 5000,
+        "frame_timeout_ms": 0,
+        "groups": [
+            {
+                "title": "System",
+                "id": "system",
+                "order": 1
+            },
+            {
+                "title": "Young fish",
+                "id": "young_fish",
+                "order": 2
+            },
+            {
+                "title": "System",
+                "id": "yf_system",
+                "group": "young_fish",
+                "order": 1
+            },
+            {
+                "title": "Summator",
+                "id": "yf_summator",
+                "group": "young_fish",
+                "order": 2
+            },
+            {
+                "title": "Inverter",
+                "id": "yf_inverter",
+                "group": "young_fish",
+                "order": 3
+            },
+            {
+                "title": "Inverter1",
+                "id": "yf_inverter1",
+                "group": "yf_inverter",
+                "order": 1
+            },
+            {
+                "title": "Inverter2",
+                "id": "yf_inverter2",
+                "group": "yf_inverter",
+                "order": 2
+            },
+            {
+                "title": "Inverter3",
+                "id": "yf_inverter3",
+                "group": "yf_inverter",
+                "order": 3
+            },
+            {
+                "title": "Inverter4",
+                "id": "yf_inverter4",
+                "group": "yf_inverter",
+                "order": 4
+            },
+            {
+                "title": "Drum filter",
+                "id": "yf_drum_filter",
+                "group": "young_fish",
+                "order": 4
+            },
+            {
+                "title": "Konus",
+                "id": "yf_konus",
+                "group": "young_fish",
+                "order": 5
+            },
+            {
+                "title": "Oxygen sensor",
+                "id": "yf_oxygen_sensor",
+                "group": "young_fish",
+                "order": 6
+            },
+            {
+                "title": "sensor 1",
+                "id": "yf_oxygen_sensor_1",
+                "group": "yf_oxygen_sensor",
+                "order": 1
+            },
+            {
+                "title": "sensor 2",
+                "id": "yf_oxygen_sensor_2",
+                "group": "yf_oxygen_sensor",
+                "order": 2
+            },
+            {
+                "title": "pH sensor",
+                "id": "yf_pH_sensor",
+                "group": "young_fish",
+                "order": 7
+            },
+            {
+                "title": "sensor 1",
+                "id": "yf_pH_sensor_1",
+                "group": "yf_pH_sensor",
+                "order": 1
+            },
+            {
+                "title": "sensor 2",
+                "id": "yf_pH_sensor_2",
+                "group": "yf_pH_sensor",
+                "order": 2
+            },
+            {
+                "title": "Pool",
+                "id": "yf_pool",
+                "group": "young_fish",
+                "order": 9
+            }
+        ],
+        "channels": [
+            {
+                "name": "Flag panel restart",
+                "id": "panel_restart_flag",
+                "reg_type": "holding",
+                "address": "0x0063",
+                "type": "value",
+                "group": "system",
+                "enabled": true,
+                "order": 1
+            },
+            {
+                "name": "Panel synchronization",
+                "id": "panel_synchronization",
+                "reg_type": "holding",
+                "address": "0x0066",
+                "type": "value",
+                "group": "system",
+                "enabled": true,
+                "order": 2
+            },
+            {
+                "name": "Panel expect",
+                "id": "panel_expect",
+                "reg_type": "holding",
+                "address": "0x0067",
+                "type": "value",
+                "group": "system",
+                "enabled": true,
+                "order": 3
+            },
+            {
+                "name": "pH_4.01",
+                "id": "yf_pH_4.01",
+                "reg_type": "holding",
+                "address": "0x006E",
+                "type": "value",
+                "group": "system",
+                "enabled": true,
+                "order": 4
+            },
+            {
+                "name": "pH_6.86",
+                "id": "yf_pH_6.86",
+                "reg_type": "holding",
+                "address": "0x006F",
+                "type": "value",
+                "group": "system",
+                "enabled": true,
+                "order": 5
+            },
+            {
+                "name": "pH_7.01",
+                "id": "yf_pH_7.01",
+                "reg_type": "holding",
+                "address": "0x0070",
+                "type": "value",
+                "group": "system",
+                "enabled": true,
+                "order": 6
+            },
+            {
+                "name": "pH_9.18",
+                "id": "yf_pH_9.18",
+                "reg_type": "holding",
+                "address": "0x0071",
+                "type": "value",
+                "group": "system",
+                "enabled": true,
+                "order": 7
+            },
+            {
+                "name": "pH_10.01",
+                "id": "yf_pH_10.01",
+                "reg_type": "holding",
+                "address": "0x0072",
+                "type": "value",
+                "group": "system",
+                "enabled": true,
+                "order": 8
+            },
+            {
+                "name": "YF status",
+                "id": "yf_status",
+                "reg_type": "holding",
+                "address": "0x00C8",
+                "type": "switch",
+                "group": "yf_system",
+                "enabled": true,
+                "order": 1
+            },
+            {
+                "name": "YF branch1 status",
+                "id": "yf_branch1_status",
+                "reg_type": "holding",
+                "address": "0x00C9",
+                "type": "switch",
+                "group": "yf_system",
+                "enabled": true,
+                "order": 2
+            },
+            {
+                "name": "YF branch2 status",
+                "id": "yf_branch2_status",
+                "reg_type": "holding",
+                "address": "0x00CA",
+                "type": "switch",
+                "group": "yf_system",
+                "enabled": true,
+                "order": 3
+            },
+            {
+                "name": "YF row1 status",
+                "id": "yf_row1_status",
+                "reg_type": "holding",
+                "address": "0x00CB",
+                "type": "switch",
+                "group": "yf_system",
+                "enabled": true,
+                "order": 4
+            },
+            {
+                "name": "YF row2 status",
+                "id": "yf_row2_status",
+                "reg_type": "holding",
+                "address": "0x00CC",
+                "type": "switch",
+                "group": "yf_system",
+                "enabled": true,
+                "order": 5
+            },
+            {
+                "name": "YF row3 status",
+                "id": "yf_row3_status",
+                "reg_type": "holding",
+                "address": "0x00CD",
+                "type": "switch",
+                "group": "yf_system",
+                "enabled": true,
+                "order": 6
+            },
+            {
+                "name": "YF row4 status",
+                "id": "yf_row4_status",
+                "reg_type": "holding",
+                "address": "0x00CE",
+                "type": "switch",
+                "group": "yf_system",
+                "enabled": true,
+                "order": 7
+            },
+            {
+                "name": "YF row5 status",
+                "id": "yf_row5_status",
+                "reg_type": "holding",
+                "address": "0x00CF",
+                "type": "switch",
+                "group": "yf_system",
+                "enabled": true,
+                "order": 8
+            },
+            {
+                "name": "YF pair1 pums",
+                "id": "yf_pair1_pums",
+                "reg_type": "holding",
+                "address": "0x00D0",
+                "type": "switch",
+                "group": "yf_system",
+                "enabled": true,
+                "order": 9
+            },
+            {
+                "name": "YF pair2 pums",
+                "id": "yf_pair2_pums",
+                "reg_type": "holding",
+                "address": "0x00D1",
+                "type": "switch",
+                "group": "yf_system",
+                "enabled": true,
+                "order": 10
+            },
+            {
+                "name": "YF pair1 timer",
+                "id": "yf_pair1_timer",
+                "reg_type": "holding",
+                "address": "0x00D2",
+                "type": "value",
+                "group": "yf_system",
+                "enabled": true,
+                "order": 11
+            },
+            {
+                "name": "YF pair2 timer",
+                "id": "yf_pair2_timer",
+                "reg_type": "holding",
+                "address": "0x00D3",
+                "type": "value",
+                "group": "yf_system",
+                "enabled": true,
+                "order": 12
+            },
+            {
+                "name": "YF water substitution",
+                "id": "yf_water_substitution",
+                "reg_type": "holding",
+                "address": "0x00D7",
+                "type": "value",
+                "group": "yf_system",
+                "enabled": true,
+                "order": 13
+            },
+            {
+                "name": "YF percent substitution",
+                "id": "yf_percent_substitution",
+                "reg_type": "holding",
+                "address": "0x00D8",
+                "type": "value",
+                "group": "yf_system",
+                "enabled": true,
+                "order": 14
+            },
+            {
+                "name": "YF number substitution",
+                "id": "yf_number_substitution",
+                "reg_type": "holding",
+                "address": "0x00D9",
+                "type": "value",
+                "group": "yf_system",
+                "enabled": true,
+                "order": 15
+            },
+            {
+                "name": "YF pool activ",
+                "id": "yf_pool_activ",
+                "reg_type": "holding",
+                "address": "0x00DA",
+                "type": "value",
+                "group": "yf_system",
+                "enabled": true,
+                "order": 16
+            },
+            {
+                "name": "YF water volume",
+                "id": "yf_water_volume",
+                "reg_type": "holding",
+                "address": "0x00DB",
+                "type": "value",
+                "group": "yf_system",
+                "enabled": true,
+                "order": 17
+            },
+            {
+                "name": "YF average temperature",
+                "id": "yf_average_temperature",
+                "reg_type": "holding",
+                "address": "0x00DC",
+                "type": "value",
+                "group": "yf_system",
+                "enabled": true,
+                "order": 18
+            },
+            {
+                "name": "YF sensor flow1",
+                "id": "yf_sensor_flow1",
+                "reg_type": "holding",
+                "address": "0x00DD",
+                "type": "value",
+                "group": "yf_system",
+                "enabled": true,
+                "order": 19
+            },
+            {
+                "name": "YF sensor flow2",
+                "id": "yf_sensor_flow2",
+                "reg_type": "holding",
+                "address": "0x00DE",
+                "type": "value",
+                "group": "yf_system",
+                "enabled": true,
+                "order": 20
+            },
+            {
+                "name": "YF valve1 position",
+                "id": "yf_valve1_position",
+                "reg_type": "holding",
+                "address": "0x00E1",
+                "type": "switch",
+                "group": "yf_system",
+                "enabled": true,
+                "order": 21
+            },
+            {
+                "name": "YF valve2 position",
+                "id": "yf_valve2_position",
+                "reg_type": "holding",
+                "address": "0x00E2",
+                "type": "switch",
+                "group": "yf_system",
+                "enabled": true,
+                "order": 22
+            },
+            {
+                "name": "YF valve3 position",
+                "id": "yf_valve3_position",
+                "reg_type": "holding",
+                "address": "0x00E3",
+                "type": "switch",
+                "group": "yf_system",
+                "enabled": true,
+                "order": 23
+            },
+            {
+                "name": "YF auto heating",
+                "id": "yf_auto_heating",
+                "reg_type": "holding",
+                "address": "0x00E4",
+                "type": "switch",
+                "group": "yf_system",
+                "enabled": true,
+                "order": 24
+            },
+            {
+                "name": "YF auto water",
+                "id": "yf_auto_water",
+                "reg_type": "holding",
+                "address": "0x00E5",
+                "type": "switch",
+                "group": "yf_system",
+                "enabled": true,
+                "order": 25
+            },
+            {
+                "name": "YF sensor flow1 water",
+                "id": "yf_sensor_flow1_water",
+                "reg_type": "holding",
+                "address": "0x00E6",
+                "type": "value",
+                "group": "yf_system",
+                "enabled": true,
+                "order": 26
+            },
+            {
+                "name": "YF summator level",
+                "id": "yf_summator_level",
+                "reg_type": "holding",
+                "address": "0x00FA",
+                "type": "value",
+                "format": "s16",
+                "group": "yf_summator",
+                "enabled": true,
+                "order": 1
+            },
+            {
+                "name": "YF summator temperature1",
+                "id": "yf_summator_temperature1",
+                "reg_type": "holding",
+                "units": "°С",
+                "address": "0x00FB",
+                "type": "value",
+                "format": "s16",
+                "group": "yf_summator",
+                "enabled": true,
+                "order": 2
+            },
+            {
+                "name": "YF summator temperature2",
+                "id": "yf_summator_temperature2",
+                "reg_type": "holding",
+                "units": "°С",
+                "address": "0x00FC",
+                "type": "value",
+                "format": "s16",
+                "group": "yf_summator",
+                "enabled": true,
+                "order": 3
+            },
+            {
+                "name": "YF inverter1 status",
+                "id": "yf_inverter1_status",
+                "reg_type": "holding",
+                "address": "0x012C",
+                "type": "switch",
+                "group": "yf_inverter1",
+                "enabled": true,
+                "order": 1
+            },
+            {
+                "name": "YF inverter1 Start_Stop",
+                "id": "yf_inverter1_Start_Stop",
+                "reg_type": "holding",
+                "address": "0x012D",
+                "type": "switch",
+                "group": "yf_inverter1",
+                "enabled": true,
+                "order": 2
+            },
+            {
+                "name": "YF inverter1 frequency setpoint",
+                "id": "yf_inverter1_frequency_setpoint_%",
+                "reg_type": "holding",
+                "address": "0x012E",
+                "type": "value",
+                "group": "yf_inverter1",
+                "enabled": true,
+                "order": 3
+            },
+            {
+                "name": "YF inverter1 mode",
+                "id": "yf_inverter1_mode",
+                "reg_type": "holding",
+                "address": "0x012F",
+                "type": "value",
+                "group": "yf_inverter1",
+                "enabled": true,
+                "order": 4
+            },
+            {
+                "name": "YF inverter1 energy",
+                "id": "yf_inverter1_energy",
+                "reg_type": "holding",
+                "address": "0x0130",
+                "type": "value",
+                "group": "yf_inverter1",
+                "enabled": true,
+                "order": 5
+            },
+            {
+                "name": "YF inverter1 warning",
+                "id": "yf_inverter1_warning",
+                "reg_type": "holding",
+                "address": "0x0131",
+                "type": "value",
+                "group": "yf_inverter1",
+                "enabled": true,
+                "order": 6
+            },
+            {
+                "name": "YF inverter1 error",
+                "id": "yf_inverter1_error",
+                "reg_type": "holding",
+                "address": "0x0132",
+                "type": "value",
+                "group": "yf_inverter1",
+                "enabled": true,
+                "order": 7
+            },
+            {
+                "name": "YF inverter2 status",
+                "id": "yf_inverter2_status",
+                "reg_type": "holding",
+                "address": "0x0136",
+                "type": "switch",
+                "group": "yf_inverter2",
+                "enabled": true,
+                "order": 1
+            },
+            {
+                "name": "YF inverter2 Start_Stop",
+                "id": "yf_inverter2_Start_Stop",
+                "reg_type": "holding",
+                "address": "0x0137",
+                "type": "switch",
+                "group": "yf_inverter2",
+                "enabled": true,
+                "order": 2
+            },
+            {
+                "name": "YF inverter2 frequency setpoint",
+                "id": "yf_inverter2_frequency_setpoint_%",
+                "reg_type": "holding",
+                "address": "0x0138",
+                "type": "value",
+                "group": "yf_inverter2",
+                "enabled": true,
+                "order": 3
+            },
+            {
+                "name": "YF inverter2 mode",
+                "id": "yf_inverter2_mode",
+                "reg_type": "holding",
+                "address": "0x0139",
+                "type": "value",
+                "group": "yf_inverter2",
+                "enabled": true,
+                "order": 4
+            },
+            {
+                "name": "YF inverter2 energy",
+                "id": "yf_inverter2_energy",
+                "reg_type": "holding",
+                "address": "0x013A",
+                "type": "value",
+                "group": "yf_inverter2",
+                "enabled": true,
+                "order": 5
+            },
+            {
+                "name": "YF inverter2 warning",
+                "id": "yf_inverter2_warning",
+                "reg_type": "holding",
+                "address": "0x013B",
+                "type": "value",
+                "group": "yf_inverter2",
+                "enabled": true,
+                "order": 6
+            },
+            {
+                "name": "YF inverter2 error",
+                "id": "yf_inverter2_error",
+                "reg_type": "holding",
+                "address": "0x013C",
+                "type": "value",
+                "group": "yf_inverter2",
+                "enabled": true,
+                "order": 7
+            },
+            {
+                "name": "YF inverter3 status",
+                "id": "yf_inverter3_status",
+                "reg_type": "holding",
+                "address": "0x0140",
+                "type": "switch",
+                "group": "yf_inverter3",
+                "enabled": true,
+                "order": 1
+            },
+            {
+                "name": "YF inverter3 Start_Stop",
+                "id": "yf_inverter3_Start_Stop",
+                "reg_type": "holding",
+                "address": "0x0141",
+                "type": "switch",
+                "group": "yf_inverter3",
+                "enabled": true,
+                "order": 2
+            },
+            {
+                "name": "YF inverter3 frequency setpoint",
+                "id": "yf_inverter3_frequency_setpoint_%",
+                "reg_type": "holding",
+                "address": "0x0142",
+                "type": "value",
+                "group": "yf_inverter3",
+                "enabled": true,
+                "order": 3
+            },
+            {
+                "name": "YF inverter3 mode",
+                "id": "yf_inverter3_mode",
+                "reg_type": "holding",
+                "address": "0x0143",
+                "type": "value",
+                "group": "yf_inverter3",
+                "enabled": true,
+                "order": 4
+            },
+            {
+                "name": "YF inverter3 energy",
+                "id": "yf_inverter3_energy",
+                "reg_type": "holding",
+                "address": "0x0144",
+                "type": "value",
+                "group": "yf_inverter3",
+                "enabled": true,
+                "order": 5
+            },
+            {
+                "name": "YF inverter3 warning",
+                "id": "yf_inverter3_warning",
+                "reg_type": "holding",
+                "address": "0x0145",
+                "type": "value",
+                "group": "yf_inverter3",
+                "enabled": true,
+                "order": 6
+            },
+            {
+                "name": "YF inverter3 error",
+                "id": "yf_inverter3_error",
+                "reg_type": "holding",
+                "address": "0x0146",
+                "type": "value",
+                "group": "yf_inverter3",
+                "enabled": true,
+                "order": 7
+            },
+            {
+                "name": "YF inverter4 status",
+                "id": "yf_inverter4_status",
+                "reg_type": "holding",
+                "address": "0x014A",
+                "type": "switch",
+                "group": "yf_inverter4",
+                "enabled": true,
+                "order": 1
+            },
+            {
+                "name": "YF inverter4 Start_Stop",
+                "id": "yf_inverter4_Start_Stop",
+                "reg_type": "holding",
+                "address": "0x014B",
+                "type": "switch",
+                "group": "yf_inverter4",
+                "enabled": true,
+                "order": 2
+            },
+            {
+                "name": "YF inverter4 frequency setpoint",
+                "id": "yf_inverter4_frequency_setpoint_%",
+                "reg_type": "holding",
+                "address": "0x014C",
+                "type": "value",
+                "group": "yf_inverter4",
+                "enabled": true,
+                "order": 3
+            },
+            {
+                "name": "YF inverter4 mode",
+                "id": "yf_inverter4_mode",
+                "reg_type": "holding",
+                "address": "0x014D",
+                "type": "value",
+                "group": "yf_inverter4",
+                "enabled": true,
+                "order": 4
+            },
+            {
+                "name": "YF inverter4 energy",
+                "id": "yf_inverter4_energy",
+                "reg_type": "holding",
+                "address": "0x014E",
+                "type": "value",
+                "group": "yf_inverter4",
+                "enabled": true,
+                "order": 5
+            },
+            {
+                "name": "YF inverter4 warning",
+                "id": "yf_inverter4_warning",
+                "reg_type": "holding",
+                "address": "0x014F",
+                "type": "value",
+                "group": "yf_inverter4",
+                "enabled": true,
+                "order": 6
+            },
+            {
+                "name": "YF inverter4 error",
+                "id": "yf_inverter4_error",
+                "reg_type": "holding",
+                "address": "0x0150",
+                "type": "value",
+                "group": "yf_inverter4",
+                "enabled": true,
+                "order": 7
+            },
+            {
+                "name": "YF drum filter1 level",
+                "id": "yf_drum_filter1_level",
+                "reg_type": "holding",
+                "address": "0x0154",
+                "type": "value",
+                "group": "yf_drum_filter",
+                "enabled": true,
+                "order": 1
+            },
+            {
+                "name": "YF drum filter2 level",
+                "id": "yf_drum_filter2_level",
+                "reg_type": "holding",
+                "address": "0x0155",
+                "type": "value",
+                "group": "yf_drum_filter",
+                "enabled": true,
+                "order": 2
+            },
+            {
+                "name": "YF konus1 level",
+                "id": "yf_konus1_level",
+                "reg_type": "holding",
+                "address": "0x0156",
+                "type": "value",
+                "group": "yf_konus",
+                "enabled": true,
+                "order": 1
+            },
+            {
+                "name": "YF konus2 level",
+                "id": "yf_konus2_level",
+                "reg_type": "holding",
+                "address": "0x0157",
+                "type": "value",
+                "group": "yf_konus",
+                "enabled": true,
+                "order": 2
+            },
+            {
+                "name": "Oxygen",
+                "id": "yf_oxygen1_oxygen",
+                "reg_type": "holding",
+                "units": "ml/L",
+                "address": "0x015E",
+                "type": "value",
+                "format": "u16",
+                "group": "yf_oxygen_sensor_1",
+                "enabled": true,
+                "order": 1
+            },
+            {
+                "name": "temperature",
+                "id": "yf_oxygen1_temperature",
+                "reg_type": "holding",
+                "units": "°С",
+                "address": "0x015F",
+                "type": "value",
+                "format": "u16",
+                "group": "yf_oxygen_sensor_1",
+                "enabled": true,
+                "order": 2
+            },
+            {
+                "name": "calibration status",
+                "id": "yf_oxygen1_calibration_status",
+                "reg_type": "holding",
+                "address": "0x0160",
+                "type": "value",
+                "format": "u16",
+                "group": "yf_oxygen_sensor_1",
+                "enabled": true,
+                "order": 4
+            },
+            {
+                "name": "Reset",
+                "id": "yf_oxygen1_reset",
+                "reg_type": "holding",
+                "address": "0x0161",
+                "type": "value",
+                "group": "yf_oxygen_sensor_1",
+                "enabled": true,
+                "order": 5
+            },
+            {
+                "name": "Air calibratio",
+                "id": "yf_oxygen1_air_calibratio",
+                "reg_type": "holding",
+                "address": "0x0162",
+                "type": "value",
+                "group": "yf_oxygen_sensor_1",
+                "enabled": true,
+                "order": 6
+            },
+            {
+                "name": "Zero calibratio",
+                "id": "yf_oxygen1_zero_calibratio",
+                "reg_type": "holding",
+                "address": "0x0163",
+                "type": "value",
+                "group": "yf_oxygen_sensor_1",
+                "enabled": true,
+                "order": 7
+            },
+            {
+                "name": "Exit calibration",
+                "id": "yf_oxygen1_exiting_calibration",
+                "reg_type": "holding",
+                "address": "0x0164",
+                "type": "value",
+                "group": "yf_oxygen_sensor_1",
+                "enabled": true,
+                "order": 8
+            },
+            {
+                "name": "Oxygen",
+                "id": "yf_oxygen2_oxygen",
+                "reg_type": "holding",
+                "units": "ml/L",
+                "address": "0x0168",
+                "type": "value",
+                "format": "u16",
+                "group": "yf_oxygen_sensor_2",
+                "enabled": true,
+                "order": 1
+            },
+            {
+                "name": "temperature",
+                "id": "yf_oxygen2_temperature",
+                "reg_type": "holding",
+                "units": "°С",
+                "address": "0x0169",
+                "type": "value",
+                "format": "u16",
+                "group": "yf_oxygen_sensor_2",
+                "enabled": true,
+                "order": 2
+            },
+            {
+                "name": "calibration status",
+                "id": "yf_oxygen2_calibration_status",
+                "reg_type": "holding",
+                "address": "0x016A",
+                "type": "value",
+                "format": "u16",
+                "group": "yf_oxygen_sensor_2",
+                "enabled": true,
+                "order": 4
+            },
+            {
+                "name": "Reset",
+                "id": "yf_oxygen2_reset",
+                "reg_type": "holding",
+                "address": "0x016B",
+                "type": "value",
+                "group": "yf_oxygen_sensor_2",
+                "enabled": true,
+                "order": 5
+            },
+            {
+                "name": "Air calibratio",
+                "id": "yf_oxygen2_air_calibratio",
+                "reg_type": "holding",
+                "address": "0x016C",
+                "type": "value",
+                "group": "yf_oxygen_sensor_2",
+                "enabled": true,
+                "order": 6
+            },
+            {
+                "name": "Zero calibratio",
+                "id": "yf_oxygen2_zero_calibratio",
+                "reg_type": "holding",
+                "address": "0x016D",
+                "type": "value",
+                "group": "yf_oxygen_sensor_2",
+                "enabled": true,
+                "order": 7
+            },
+            {
+                "name": "Exit calibration",
+                "id": "yf_oxygen2_exiting_calibration",
+                "reg_type": "holding",
+                "address": "0x016E",
+                "type": "value",
+                "group": "yf_oxygen_sensor_2",
+                "enabled": true,
+                "order": 8
+            },
+            {
+                "name": "pH",
+                "id": "yf_pH1_pH",
+                "reg_type": "holding",
+                "units": "pH",
+                "address": "0x0172",
+                "type": "value",
+                "format": "u16",
+                "group": "yf_pH_sensor_1",
+                "enabled": true,
+                "order": 1
+            },
+            {
+                "name": "pH temperature",
+                "id": "yf_pH1_temperature",
+                "reg_type": "holding",
+                "units": "°С",
+                "address": "0x0173",
+                "type": "value",
+                "format": "u16",
+                "group": "yf_pH_sensor_1",
+                "enabled": true,
+                "order": 2
+            },
+            {
+                "name": "ferst calibration",
+                "id": "yf_pH1_ferst_calibration",
+                "reg_type": "holding",
+                "address": "0x0174",
+                "type": "value",
+                "group": "yf_pH_sensor_1",
+                "enabled": true,
+                "order": 3
+            },
+            {
+                "name": "second calibration",
+                "id": "yf_pH1_second_calibration",
+                "reg_type": "holding",
+                "address": "0x0175",
+                "type": "value",
+                "group": "yf_pH_sensor_1",
+                "enabled": true,
+                "order": 4
+            },
+            {
+                "name": "pH",
+                "id": "yf_pH2_pH",
+                "reg_type": "holding",
+                "units": "pH",
+                "address": "0x0177",
+                "type": "value",
+                "format": "u16",
+                "group": "yf_pH_sensor_2",
+                "enabled": true,
+                "order": 1
+            },
+            {
+                "name": "pH temperature",
+                "id": "yf_pH2_temperature",
+                "reg_type": "holding",
+                "units": "°С",
+                "address": "0x0178",
+                "type": "value",
+                "format": "u16",
+                "group": "yf_pH_sensor_2",
+                "enabled": true,
+                "order": 2
+            },
+            {
+                "name": "ferst calibration",
+                "id": "yf_pH2_ferst_calibration",
+                "reg_type": "holding",
+                "address": "0x0179",
+                "type": "value",
+                "group": "yf_pH_sensor_2",
+                "enabled": true,
+                "order": 3
+            },
+            {
+                "name": "second calibration",
+                "id": "yf_pH2_second_calibration",
+                "reg_type": "holding",
+                "address": "0x017A",
+                "type": "value",
+                "group": "yf_pH_sensor_2",
+                "enabled": true,
+                "order": 4
+            },
+            {
+                "name": "YF pool1 status",
+                "id": "yf_pool1_status",
+                "reg_type": "holding",
+                "address": "0x2904",
+                "type": "switch",
+                "group": "yf_pool",
+                "enabled": true,
+                "order": 1
+            },
+            {
+                "name": "YF pool1 level",
+                "id": "yf_pool1_level",
+                "reg_type": "holding",
+                "address": "0x01F5",
+                "type": "value",
+                "group": "yf_pool",
+                "enabled": true,
+                "order": 2
+            },
+            {
+                "name": "YF pool2 status",
+                "id": "yf_pool2_status",
+                "reg_type": "holding",
+                "address": "0x2905",
+                "type": "switch",
+                "group": "yf_pool",
+                "enabled": true,
+                "order": 3
+            },
+            {
+                "name": "YF pool2 level",
+                "id": "yf_pool2_level",
+                "reg_type": "holding",
+                "address": "0x01F6",
+                "type": "value",
+                "group": "yf_pool",
+                "enabled": true,
+                "order": 4
+            },
+            {
+                "name": "YF pool3 status",
+                "id": "yf_pool3_status",
+                "reg_type": "holding",
+                "address": "0x2906",
+                "type": "switch",
+                "group": "yf_pool",
+                "enabled": true,
+                "order": 5
+            },
+            {
+                "name": "YF pool3 level",
+                "id": "yf_pool3_level",
+                "reg_type": "holding",
+                "address": "0x01F7",
+                "type": "value",
+                "group": "yf_pool",
+                "enabled": true,
+                "order": 6
+            },
+            {
+                "name": "YF pool4 status",
+                "id": "yf_pool4_status",
+                "reg_type": "holding",
+                "address": "0x2907",
+                "type": "switch",
+                "group": "yf_pool",
+                "enabled": true,
+                "order": 7
+            },
+            {
+                "name": "YF pool4 level",
+                "id": "yf_pool4_level",
+                "reg_type": "holding",
+                "address": "0x01F8",
+                "type": "value",
+                "group": "yf_pool",
+                "enabled": true,
+                "order": 8
+            },
+            {
+                "name": "YF pool5 status",
+                "id": "yf_pool5_status",
+                "reg_type": "holding",
+                "address": "0x2908",
+                "type": "switch",
+                "group": "yf_pool",
+                "enabled": true,
+                "order": 9
+            },
+            {
+                "name": "YF pool5 level",
+                "id": "yf_pool5_level",
+                "reg_type": "holding",
+                "address": "0x01F9",
+                "type": "value",
+                "group": "yf_pool",
+                "enabled": true,
+                "order": 10
+            },
+            {
+                "name": "YF pool6 status",
+                "id": "yf_pool6_status",
+                "reg_type": "holding",
+                "address": "0x2909",
+                "type": "switch",
+                "group": "yf_pool",
+                "enabled": true,
+                "order": 11
+            },
+            {
+                "name": "YF pool6 level",
+                "id": "yf_pool6_level",
+                "reg_type": "holding",
+                "address": "0x01FA",
+                "type": "value",
+                "group": "yf_pool",
+                "enabled": true,
+                "order": 12
+            },
+            {
+                "name": "YF pool7 status",
+                "id": "yf_pool7_status",
+                "reg_type": "holding",
+                "address": "0x290A",
+                "type": "switch",
+                "group": "yf_pool",
+                "enabled": true,
+                "order": 13
+            },
+            {
+                "name": "YF pool7 level",
+                "id": "yf_pool7_level",
+                "reg_type": "holding",
+                "address": "0x01FB",
+                "type": "value",
+                "group": "yf_pool",
+                "enabled": true,
+                "order": 14
+            },
+            {
+                "name": "YF pool8 status",
+                "id": "yf_pool8_status",
+                "reg_type": "holding",
+                "address": "0x290B",
+                "type": "switch",
+                "group": "yf_pool",
+                "enabled": true,
+                "order": 15
+            },
+            {
+                "name": "YF pool8 level",
+                "id": "yf_pool8_level",
+                "reg_type": "holding",
+                "address": "0x01FC",
+                "type": "value",
+                "group": "yf_pool",
+                "enabled": true,
+                "order": 16
+            },
+            {
+                "name": "YF pool9 status",
+                "id": "yf_pool9_status",
+                "reg_type": "holding",
+                "address": "0x290C",
+                "type": "switch",
+                "group": "yf_pool",
+                "enabled": true,
+                "order": 17
+            },
+            {
+                "name": "YF pool9 level",
+                "id": "yf_pool9_level",
+                "reg_type": "holding",
+                "address": "0x01FD",
+                "type": "value",
+                "group": "yf_pool",
+                "enabled": true,
+                "order": 18
+            },
+            {
+                "name": "YF pool10 status",
+                "id": "yf_pool10_status",
+                "reg_type": "holding",
+                "address": "0x290D",
+                "type": "switch",
+                "group": "yf_pool",
+                "enabled": true,
+                "order": 19
+            },
+            {
+                "name": "YF pool10 level",
+                "id": "yf_pool10_level",
+                "reg_type": "holding",
+                "address": "0x01FE",
+                "type": "value",
+                "group": "yf_pool",
+                "enabled": true,
+                "order": 20
+            },
+            {
+                "name": "YF pool11 status",
+                "id": "yf_pool11_status",
+                "reg_type": "holding",
+                "address": "0x290E",
+                "type": "switch",
+                "group": "yf_pool",
+                "enabled": true,
+                "order": 21
+            },
+            {
+                "name": "YF pool11 level",
+                "id": "yf_pool11_level",
+                "reg_type": "holding",
+                "address": "0x01FF",
+                "type": "value",
+                "group": "yf_pool",
+                "enabled": true,
+                "order": 22
+            },
+            {
+                "name": "YF pool12 status",
+                "id": "yf_pool12_status",
+                "reg_type": "holding",
+                "address": "0x290F",
+                "type": "switch",
+                "group": "yf_pool",
+                "enabled": true,
+                "order": 23
+            },
+            {
+                "name": "YF pool12 level",
+                "id": "yf_pool12_level",
+                "reg_type": "holding",
+                "address": "0x0200",
+                "type": "value",
+                "group": "yf_pool",
+                "enabled": true,
+                "order": 24
+            },
+            {
+                "name": "YF pool13 status",
+                "id": "yf_pool13_status",
+                "reg_type": "holding",
+                "address": "0x2910",
+                "type": "switch",
+                "group": "yf_pool",
+                "enabled": true,
+                "order": 25
+            },
+            {
+                "name": "YF pool13 level",
+                "id": "yf_pool13_level",
+                "reg_type": "holding",
+                "address": "0x0201",
+                "type": "value",
+                "group": "yf_pool",
+                "enabled": true,
+                "order": 26
+            },
+            {
+                "name": "YF pool14 status",
+                "id": "yf_pool14_status",
+                "reg_type": "holding",
+                "address": "0x2911",
+                "type": "switch",
+                "group": "yf_pool",
+                "enabled": true,
+                "order": 27
+            },
+            {
+                "name": "YF pool14 level",
+                "id": "yf_pool14_level",
+                "reg_type": "holding",
+                "address": "0x0202",
+                "type": "value",
+                "group": "yf_pool",
+                "enabled": true,
+                "order": 28
+            },
+            {
+                "name": "YF pool15 status",
+                "id": "yf_pool15_status",
+                "reg_type": "holding",
+                "address": "0x2912",
+                "type": "switch",
+                "group": "yf_pool",
+                "enabled": true,
+                "order": 29
+            },
+            {
+                "name": "YF pool15 level",
+                "id": "yf_pool15_level",
+                "reg_type": "holding",
+                "address": "0x0203",
+                "type": "value",
+                "group": "yf_pool",
+                "enabled": true,
+                "order": 30
+            },
+            {
+                "name": "YF pool16 status",
+                "id": "yf_pool16_status",
+                "reg_type": "holding",
+                "address": "0x2913",
+                "type": "switch",
+                "group": "yf_pool",
+                "enabled": true,
+                "order": 31
+            },
+            {
+                "name": "YF pool16 level",
+                "id": "yf_pool16_level",
+                "reg_type": "holding",
+                "address": "0x0204",
+                "type": "value",
+                "group": "yf_pool",
+                "enabled": true,
+                "order": 32
+            },
+            {
+                "name": "YF pool17 status",
+                "id": "yf_pool17_status",
+                "reg_type": "holding",
+                "address": "0x2914",
+                "type": "switch",
+                "group": "yf_pool",
+                "enabled": true,
+                "order": 33
+            },
+            {
+                "name": "YF pool17 level",
+                "id": "yf_pool17_level",
+                "reg_type": "holding",
+                "address": "0x0205",
+                "type": "value",
+                "group": "yf_pool",
+                "enabled": true,
+                "order": 34
+            },
+            {
+                "name": "YF pool18 status",
+                "id": "yf_pool18_status",
+                "reg_type": "holding",
+                "address": "0x2915",
+                "type": "switch",
+                "group": "yf_pool",
+                "enabled": true,
+                "order": 35
+            },
+            {
+                "name": "YF pool18 level",
+                "id": "yf_pool18_level",
+                "reg_type": "holding",
+                "address": "0x0206",
+                "type": "value",
+                "group": "yf_pool",
+                "enabled": true,
+                "order": 36
+            },
+            {
+                "name": "YF pool19 status",
+                "id": "yf_pool19_status",
+                "reg_type": "holding",
+                "address": "0x2916",
+                "type": "switch",
+                "group": "yf_pool",
+                "enabled": true,
+                "order": 37
+            },
+            {
+                "name": "YF pool19 level",
+                "id": "yf_pool19_level",
+                "reg_type": "holding",
+                "address": "0x0207",
+                "type": "value",
+                "group": "yf_pool",
+                "enabled": true,
+                "order": 38
+            },
+            {
+                "name": "YF pool20 status",
+                "id": "yf_pool20_status",
+                "reg_type": "holding",
+                "address": "0x2917",
+                "type": "switch",
+                "group": "yf_pool",
+                "enabled": true,
+                "order": 39
+            },
+            {
+                "name": "YF pool20 level",
+                "id": "yf_pool20_level",
+                "reg_type": "holding",
+                "address": "0x0208",
+                "type": "value",
+                "group": "yf_pool",
+                "enabled": true,
+                "order": 40
+            },
+            {
+                "name": "YF pool21 status",
+                "id": "yf_pool21_status",
+                "reg_type": "holding",
+                "address": "0x2918",
+                "type": "switch",
+                "group": "yf_pool",
+                "enabled": true,
+                "order": 41
+            },
+            {
+                "name": "YF pool21 level",
+                "id": "yf_pool21_level",
+                "reg_type": "holding",
+                "address": "0x0209",
+                "type": "value",
+                "group": "yf_pool",
+                "enabled": true,
+                "order": 42
+            },
+            {
+                "name": "YF pool22 status",
+                "id": "yf_pool22_status",
+                "reg_type": "holding",
+                "address": "0x2919",
+                "type": "switch",
+                "group": "yf_pool",
+                "enabled": true,
+                "order": 43
+            },
+            {
+                "name": "YF pool22 level",
+                "id": "yf_pool22_level",
+                "reg_type": "holding",
+                "address": "0x020A",
+                "type": "value",
+                "group": "yf_pool",
+                "enabled": true,
+                "order": 44
+            },
+            {
+                "name": "YF pool23 status",
+                "id": "yf_pool23_status",
+                "reg_type": "holding",
+                "address": "0x291A",
+                "type": "switch",
+                "group": "yf_pool",
+                "enabled": true,
+                "order": 45
+            },
+            {
+                "name": "YF pool23 level",
+                "id": "yf_pool23_level",
+                "reg_type": "holding",
+                "address": "0x020B",
+                "type": "value",
+                "group": "yf_pool",
+                "enabled": true,
+                "order": 46
+            },
+            {
+                "name": "YF pool24 status",
+                "id": "yf_pool24_status",
+                "reg_type": "holding",
+                "address": "0x291B",
+                "type": "switch",
+                "group": "yf_pool",
+                "enabled": true,
+                "order": 47
+            },
+            {
+                "name": "YF pool24 level",
+                "id": "yf_pool24_level",
+                "reg_type": "holding",
+                "address": "0x020C",
+                "type": "value",
+                "group": "yf_pool",
+                "enabled": true,
+                "order": 48
+            },
+            {
+                "name": "YF pool25 status",
+                "id": "yf_pool25_status",
+                "reg_type": "holding",
+                "address": "0x291C",
+                "type": "switch",
+                "group": "yf_pool",
+                "enabled": true,
+                "order": 49
+            },
+            {
+                "name": "YF pool25 level",
+                "id": "yf_pool25_level",
+                "reg_type": "holding",
+                "address": "0x020D",
+                "type": "value",
+                "group": "yf_pool",
+                "enabled": true,
+                "order": 50
+            },
+            {
+                "name": "YF pool26 status",
+                "id": "yf_pool26_status",
+                "reg_type": "holding",
+                "address": "0x291D",
+                "type": "switch",
+                "group": "yf_pool",
+                "enabled": true,
+                "order": 51
+            },
+            {
+                "name": "YF pool26 level",
+                "id": "yf_pool26_level",
+                "reg_type": "holding",
+                "address": "0x020E",
+                "type": "value",
+                "group": "yf_pool",
+                "enabled": true,
+                "order": 52
+            },
+            {
+                "name": "YF pool27 status",
+                "id": "yf_pool27_status",
+                "reg_type": "holding",
+                "address": "0x291E",
+                "type": "switch",
+                "group": "yf_pool",
+                "enabled": true,
+                "order": 53
+            },
+            {
+                "name": "YF pool27 level",
+                "id": "yf_pool27_level",
+                "reg_type": "holding",
+                "address": "0x020F",
+                "type": "value",
+                "group": "yf_pool",
+                "enabled": true,
+                "order": 54
+            },
+            {
+                "name": "YF pool28 status",
+                "id": "yf_pool28_status",
+                "reg_type": "holding",
+                "address": "0x291F",
+                "type": "switch",
+                "group": "yf_pool",
+                "enabled": true,
+                "order": 55
+            },
+            {
+                "name": "YF pool28 level",
+                "id": "yf_pool28_level",
+                "reg_type": "holding",
+                "address": "0x0210",
+                "type": "value",
+                "group": "yf_pool",
+                "enabled": true,
+                "order": 56
+            },
+            {
+                "name": "YF pool29 status",
+                "id": "yf_pool29_status",
+                "reg_type": "holding",
+                "address": "0x2920",
+                "type": "switch",
+                "group": "yf_pool",
+                "enabled": true,
+                "order": 57
+            },
+            {
+                "name": "YF pool29 level",
+                "id": "yf_pool29_level",
+                "reg_type": "holding",
+                "address": "0x0211",
+                "type": "value",
+                "group": "yf_pool",
+                "enabled": true,
+                "order": 58
+            },
+            {
+                "name": "YF pool30 status",
+                "id": "yf_pool30_status",
+                "reg_type": "holding",
+                "address": "0x2921",
+                "type": "switch",
+                "group": "yf_pool",
+                "enabled": true,
+                "order": 59
+            },
+            {
+                "name": "YF pool30 level",
+                "id": "yf_pool30_level",
+                "reg_type": "holding",
+                "address": "0x0212",
+                "type": "value",
+                "group": "yf_pool",
+                "enabled": true,
+                "order": 60
+            },
+            {
+                "name": "YF pool31 status",
+                "id": "yf_pool31_status",
+                "reg_type": "holding",
+                "address": "0x2922",
+                "type": "switch",
+                "group": "yf_pool",
+                "enabled": true,
+                "order": 61
+            },
+            {
+                "name": "YF pool31 level",
+                "id": "yf_pool31_level",
+                "reg_type": "holding",
+                "address": "0x0213",
+                "type": "value",
+                "group": "yf_pool",
+                "enabled": true,
+                "order": 62
+            },
+            {
+                "name": "YF pool32 status",
+                "id": "yf_pool32_status",
+                "reg_type": "holding",
+                "address": "0x2923",
+                "type": "switch",
+                "group": "yf_pool",
+                "enabled": true,
+                "order": 63
+            },
+            {
+                "name": "YF pool32 level",
+                "id": "yf_pool32_level",
+                "reg_type": "holding",
+                "address": "0x0214",
+                "type": "value",
+                "group": "yf_pool",
+                "enabled": true,
+                "order": 64
+            },
+            {
+                "name": "YF pool33 status",
+                "id": "yf_pool33_status",
+                "reg_type": "holding",
+                "address": "0x2924",
+                "type": "switch",
+                "group": "yf_pool",
+                "enabled": true,
+                "order": 65
+            },
+            {
+                "name": "YF pool33 level",
+                "id": "yf_pool33_level",
+                "reg_type": "holding",
+                "address": "0x0215",
+                "type": "value",
+                "group": "yf_pool",
+                "enabled": true,
+                "order": 66
+            },
+            {
+                "name": "YF pool34 status",
+                "id": "yf_pool34_status",
+                "reg_type": "holding",
+                "address": "0x2925",
+                "type": "switch",
+                "group": "yf_pool",
+                "enabled": true,
+                "order": 67
+            },
+            {
+                "name": "YF pool34 level",
+                "id": "yf_pool34_level",
+                "reg_type": "holding",
+                "address": "0x0216",
+                "type": "value",
+                "group": "yf_pool",
+                "enabled": true,
+                "order": 68
+            },
+            {
+                "name": "YF pool35 status",
+                "id": "yf_pool35_status",
+                "reg_type": "holding",
+                "address": "0x2926",
+                "type": "switch",
+                "group": "yf_pool",
+                "enabled": true,
+                "order": 69
+            },
+            {
+                "name": "YF pool35 level",
+                "id": "yf_pool35_level",
+                "reg_type": "holding",
+                "address": "0x0217",
+                "type": "value",
+                "group": "yf_pool",
+                "enabled": true,
+                "order": 70
+            },
+            {
+                "name": "YF pool36 status",
+                "id": "yf_pool36_status",
+                "reg_type": "holding",
+                "address": "0x2927",
+                "type": "switch",
+                "group": "yf_pool",
+                "enabled": true,
+                "order": 71
+            },
+            {
+                "name": "YF pool36 level",
+                "id": "yf_pool36_level",
+                "reg_type": "holding",
+                "address": "0x0218",
+                "type": "value",
+                "group": "yf_pool",
+                "enabled": true,
+                "order": 72
+            },
+            {
+                "name": "YF pool37 status",
+                "id": "yf_pool37_status",
+                "reg_type": "holding",
+                "address": "0x2928",
+                "type": "switch",
+                "group": "yf_pool",
+                "enabled": true,
+                "order": 73
+            },
+            {
+                "name": "YF pool37 level",
+                "id": "yf_pool37_level",
+                "reg_type": "holding",
+                "address": "0x0219",
+                "type": "value",
+                "group": "yf_pool",
+                "enabled": true,
+                "order": 74
+            },
+            {
+                "name": "YF pool38 status",
+                "id": "yf_pool38_status",
+                "reg_type": "holding",
+                "address": "0x2929",
+                "type": "switch",
+                "group": "yf_pool",
+                "enabled": true,
+                "order": 75
+            },
+            {
+                "name": "YF pool38 level",
+                "id": "yf_pool38_level",
+                "reg_type": "holding",
+                "address": "0x021A",
+                "type": "value",
+                "group": "yf_pool",
+                "enabled": true,
+                "order": 76
+            },
+            {
+                "name": "YF pool39 status",
+                "id": "yf_pool39_status",
+                "reg_type": "holding",
+                "address": "0x292A",
+                "type": "switch",
+                "group": "yf_pool",
+                "enabled": true,
+                "order": 77
+            },
+            {
+                "name": "YF pool39 level",
+                "id": "yf_pool39_level",
+                "reg_type": "holding",
+                "address": "0x021B",
+                "type": "value",
+                "group": "yf_pool",
+                "enabled": true,
+                "order": 78
+            },
+            {
+                "name": "YF pool40 status",
+                "id": "yf_pool40_status",
+                "reg_type": "holding",
+                "address": "0x292B",
+                "type": "switch",
+                "group": "yf_pool",
+                "enabled": true,
+                "order": 79
+            },
+            {
+                "name": "YF pool40 level",
+                "id": "yf_pool40_level",
+                "reg_type": "holding",
+                "address": "0x021C",
+                "type": "value",
+                "group": "yf_pool",
+                "enabled": true,
+                "order": 80
+            },
+            {
+                "name": "YF pool41 status",
+                "id": "yf_pool41_status",
+                "reg_type": "holding",
+                "address": "0x292C",
+                "type": "switch",
+                "group": "yf_pool",
+                "enabled": true,
+                "order": 81
+            },
+            {
+                "name": "YF pool41 level",
+                "id": "yf_pool41_level",
+                "reg_type": "holding",
+                "address": "0x021D",
+                "type": "value",
+                "group": "yf_pool",
+                "enabled": true,
+                "order": 82
+            },
+            {
+                "name": "YF pool42 status",
+                "id": "yf_pool40_status",
+                "reg_type": "holding",
+                "address": "0x292D",
+                "type": "switch",
+                "group": "yf_pool",
+                "enabled": true,
+                "order": 83
+            },
+            {
+                "name": "YF pool42 level",
+                "id": "yf_pool42_level",
+                "reg_type": "holding",
+                "address": "0x021E",
+                "type": "value",
+                "group": "yf_pool",
+                "enabled": true,
+                "order": 84
+            },
+            {
+                "name": "YF pool43 status",
+                "id": "yf_pool43_status",
+                "reg_type": "holding",
+                "address": "0x292E",
+                "type": "switch",
+                "group": "yf_pool",
+                "enabled": true,
+                "order": 85
+            },
+            {
+                "name": "YF pool43 level",
+                "id": "yf_pool43_level",
+                "reg_type": "holding",
+                "address": "0x021F",
+                "type": "value",
+                "group": "yf_pool",
+                "enabled": true,
+                "order": 86
+            },
+            {
+                "name": "YF pool44 status",
+                "id": "yf_pool44_status",
+                "reg_type": "holding",
+                "address": "0x292F",
+                "type": "switch",
+                "group": "yf_pool",
+                "enabled": true,
+                "order": 87
+            },
+            {
+                "name": "YF pool44 level",
+                "id": "yf_pool44_level",
+                "reg_type": "holding",
+                "address": "0x0220",
+                "type": "value",
+                "group": "yf_pool",
+                "enabled": true,
+                "order": 88
+            },
+            {
+                "name": "YF pool45 status",
+                "id": "yf_pool45_status",
+                "reg_type": "holding",
+                "address": "0x2930",
+                "type": "switch",
+                "group": "yf_pool",
+                "enabled": true,
+                "order": 89
+            },
+            {
+                "name": "YF pool45 level",
+                "id": "yf_pool45_level",
+                "reg_type": "holding",
+                "address": "0x0221",
+                "type": "value",
+                "group": "yf_pool",
+                "enabled": true,
+                "order": 90
+            },
+            {
+                "name": "YF pool46 status",
+                "id": "yf_pool46_status",
+                "reg_type": "holding",
+                "address": "0x2931",
+                "type": "switch",
+                "group": "yf_pool",
+                "enabled": true,
+                "order": 91
+            },
+            {
+                "name": "YF pool46 level",
+                "id": "yf_pool46_level",
+                "reg_type": "holding",
+                "address": "0x0222",
+                "type": "value",
+                "group": "yf_pool",
+                "enabled": true,
+                "order": 92
+            },
+            {
+                "name": "YF pool47 status",
+                "id": "yf_pool47_status",
+                "reg_type": "holding",
+                "address": "0x2932",
+                "type": "switch",
+                "group": "yf_pool",
+                "enabled": true,
+                "order": 93
+            },
+            {
+                "name": "YF pool47 level",
+                "id": "yf_pool47_level",
+                "reg_type": "holding",
+                "address": "0x0223",
+                "type": "value",
+                "group": "yf_pool",
+                "enabled": true,
+                "order": 94
+            },
+            {
+                "name": "YF pool48 status",
+                "id": "yf_pool48_status",
+                "reg_type": "holding",
+                "address": "0x2933",
+                "type": "switch",
+                "group": "yf_pool",
+                "enabled": true,
+                "order": 95
+            },
+            {
+                "name": "YF pool48 level",
+                "id": "yf_pool48_level",
+                "reg_type": "holding",
+                "address": "0x0224",
+                "type": "value",
+                "group": "yf_pool",
+                "enabled": true,
+                "order": 96
+            },
+            {
+                "name": "YF pool49 status",
+                "id": "yf_pool49_status",
+                "reg_type": "holding",
+                "address": "0x2934",
+                "type": "switch",
+                "group": "yf_pool",
+                "enabled": true,
+                "order": 97
+            },
+            {
+                "name": "YF pool49 level",
+                "id": "yf_pool49_level",
+                "reg_type": "holding",
+                "address": "0x0225",
+                "type": "value",
+                "group": "yf_pool",
+                "enabled": true,
+                "order": 98
+            },
+            {
+                "name": "YF pool50 status",
+                "id": "yf_pool50_status",
+                "reg_type": "holding",
+                "address": "0x2935",
+                "type": "switch",
+                "group": "yf_pool",
+                "enabled": true,
+                "order": 99
+            },
+            {
+                "name": "YF pool50 level",
+                "id": "yf_pool50_level",
+                "reg_type": "holding",
+                "address": "0x0226",
+                "type": "value",
+                "group": "yf_pool",
+                "enabled": true,
+                "order": 100
+            },
+            {
+                "name": "YF pool51 status",
+                "id": "yf_pool51_status",
+                "reg_type": "holding",
+                "address": "0x2936",
+                "type": "switch",
+                "group": "yf_pool",
+                "enabled": true,
+                "order": 101
+            },
+            {
+                "name": "YF pool51 level",
+                "id": "yf_pool51_level",
+                "reg_type": "holding",
+                "address": "0x0227",
+                "type": "value",
+                "group": "yf_pool",
+                "enabled": true,
+                "order": 102
+            },
+            {
+                "name": "YF pool52 status",
+                "id": "yf_pool52_status",
+                "reg_type": "holding",
+                "address": "0x2937",
+                "type": "switch",
+                "group": "yf_pool",
+                "enabled": true,
+                "order": 103
+            },
+            {
+                "name": "YF pool52 level",
+                "id": "yf_pool52_level",
+                "reg_type": "holding",
+                "address": "0x0228",
+                "type": "value",
+                "group": "yf_pool",
+                "enabled": true,
+                "order": 104
+            },
+            {
+                "name": "YF pool53 status",
+                "id": "yf_pool53_status",
+                "reg_type": "holding",
+                "address": "0x2938",
+                "type": "switch",
+                "group": "yf_pool",
+                "enabled": true,
+                "order": 105
+            },
+            {
+                "name": "YF pool53 level",
+                "id": "yf_pool53_level",
+                "reg_type": "holding",
+                "address": "0x0229",
+                "type": "value",
+                "group": "yf_pool",
+                "enabled": true,
+                "order": 106
+            },
+            {
+                "name": "YF pool54 status",
+                "id": "yf_pool54_status",
+                "reg_type": "holding",
+                "address": "0x2939",
+                "type": "switch",
+                "group": "yf_pool",
+                "enabled": true,
+                "order": 107
+            },
+            {
+                "name": "YF pool54 level",
+                "id": "yf_pool54_level",
+                "reg_type": "holding",
+                "address": "0x022A",
+                "type": "value",
+                "group": "yf_pool",
+                "enabled": true,
+                "order": 108
+            },
+            {
+                "name": "YF pool55 status",
+                "id": "yf_pool55_status",
+                "reg_type": "holding",
+                "address": "0x293A",
+                "type": "switch",
+                "group": "yf_pool",
+                "enabled": true,
+                "order": 109
+            },
+            {
+                "name": "YF pool55 level",
+                "id": "yf_pool55_level",
+                "reg_type": "holding",
+                "address": "0x022B",
+                "type": "value",
+                "group": "yf_pool",
+                "enabled": true,
+                "order": 110
+            },
+            {
+                "name": "YF pool56 status",
+                "id": "yf_pool56_status",
+                "reg_type": "holding",
+                "address": "0x293B",
+                "type": "switch",
+                "group": "yf_pool",
+                "enabled": true,
+                "order": 111
+            },
+            {
+                "name": "YF pool56 level",
+                "id": "yf_pool56_level",
+                "reg_type": "holding",
+                "address": "0x022C",
+                "type": "value",
+                "group": "yf_pool",
+                "enabled": true,
+                "order": 112
+            },
+            {
+                "name": "YF pool57 status",
+                "id": "yf_pool57_status",
+                "reg_type": "holding",
+                "address": "0x293C",
+                "type": "switch",
+                "group": "yf_pool",
+                "enabled": true,
+                "order": 113
+            },
+            {
+                "name": "YF pool57 level",
+                "id": "yf_pool57_level",
+                "reg_type": "holding",
+                "address": "0x022D",
+                "type": "value",
+                "group": "yf_pool",
+                "enabled": true,
+                "order": 114
+            },
+            {
+                "name": "YF pool58 status",
+                "id": "yf_pool58_status",
+                "reg_type": "holding",
+                "address": "0x293D",
+                "type": "switch",
+                "group": "yf_pool",
+                "enabled": true,
+                "order": 115
+            },
+            {
+                "name": "YF pool58 level",
+                "id": "yf_pool58_level",
+                "reg_type": "holding",
+                "address": "0x022E",
+                "type": "value",
+                "group": "yf_pool",
+                "enabled": true,
+                "order": 116
+            },
+            {
+                "name": "YF pool59 status",
+                "id": "yf_pool59_status",
+                "reg_type": "holding",
+                "address": "0x293E",
+                "type": "switch",
+                "group": "yf_pool",
+                "enabled": true,
+                "order": 117
+            },
+            {
+                "name": "YF pool59 level",
+                "id": "yf_pool59_level",
+                "reg_type": "holding",
+                "address": "0x022F",
+                "type": "value",
+                "group": "yf_pool",
+                "enabled": true,
+                "order": 118
+            },
+            {
+                "name": "YF pool60 status",
+                "id": "yf_pool60_status",
+                "reg_type": "holding",
+                "address": "0x293F",
+                "type": "switch",
+                "group": "yf_pool",
+                "enabled": true,
+                "order": 119
+            },
+            {
+                "name": "YF pool60 level",
+                "id": "yf_pool60_level",
+                "reg_type": "holding",
+                "address": "0x0230",
+                "type": "value",
+                "group": "yf_pool",
+                "enabled": true,
+                "order": 120
+            }
+        ],
+        "translations": {
+            "ru": {
+                "Young fish": "Мальковый цех",
+                "Summator": "Сумматор",
+                "System": "Система",
+                "Inverter": "Частотник",
+                "Drum filter": "Барабанный фильтр",
+                "Konus": "Конус",
+                "Oxygen sensor": "Датчик кислорода",
+                "pH sensor": "Датчик pH",
+                "Valve": "Клапан",
+                "Sensor flow water": "Датчик расхода воды",
+                "Summator level": "Сумматор уровень",
+                "Sensor flow1": "Датчик потока 1",
+                "Sensor flow2": "Датчик потока 2",
+                "oxygen status": "вкл/выкл",
+                "oxygen": "кислород мг/л",
+                "temperature": "температура",
+                "calibration status": "состояние электрода",
+                "Reset": "Сброс к заводским настройкам",
+                "Air calibratio": "Калибровка по воздуху",
+                "Zero calibratio": "Калибровка по нулевому раствору",
+                "Exit calibration": "Выйти из калибровки"
+            }
+        }
+    }
+}
